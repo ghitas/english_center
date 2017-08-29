@@ -710,4 +710,53 @@
   width: 95px;
   height: 95px;
 }
+.register{
+  border: 2px dotted violet;
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin: 20px 0px;
+}
+.register .input-group label{
+  background-color: #FFFFFF;
+  border-radius: 0 4px 4px 0 !important;
+}
+.register > input{ margin: 20px 0px;}
+.register .input-group{ margin: 20px 0px;}
+.register .input-group > .dropdown-menu{ right: 0;}
+.seft-test h4{
+  margin: 8px 15px;
+}
+.seft-test p{
+  padding-left: 20px;
+}
+.c-align-center{ text-align: center;}
+#btn-reg-test{
+  border-bottom: 5px solid #204d74;
+  transition-duration: 0.2s;
+}
+#btn-reg-test:hover{
+  border-bottom: 1px solid gray;
+  margin-top: 4px;
+}
+@media only screen and (min-width: 0px) {
+  .classroom-review img{
+    height: 100px;
+  }
+  .register span{
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .classroom-review img{
+    height: 150px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .classroom-review img{
+    height: 250px;
+  }
+  .register span{
+    font-size: 25px;
+  }
+}
   /*# sourceMappingURL=style.css.map */
