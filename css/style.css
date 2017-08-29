@@ -1,0 +1,713 @@
+  /*
+   * =======================================================================
+   * =======================================================================
+   * 
+   * Rip from https://greenshop-theme.bizwebvietnam.net/
+   * author https://www.facebook.com/su.leminh.7
+   * 
+   * =======================================================================
+   * =======================================================================
+   */
+  /**
+   * =========== color =============
+   * $color-xanh: #3FB871
+   * $color-text: #898989
+   */
+  /**
+   * =============== main ===================
+   */
+   /* Font */
+   @import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,vietnamese);
+   /* Apply Font */
+   body {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    min-height: 800px;
+    color: #898989; 
+  }
+
+  /* Link */
+  a {
+    color: #898989;
+    text-decoration: none;
+    transition: all 0.2s ease; 
+  }
+  a:hover, a:active, a:focus {
+    color: #3FB871;
+    text-decoration: none; 
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
+  /**
+   * ================= layout
+   */
+   /* Header */
+   .header .top {
+    color: #898989;
+    font-size: 13px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #202020; 
+  }
+  .header .top ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+  }
+  .header .top a {
+    display: block; 
+  }
+  .header .top li {
+    float: left;
+    min-width: 30px;
+  }
+  .header .top li:first-child {
+    border-left: 0;
+    padding-left: 0;
+    padding-right: 15px;
+  }
+  a
+  .header .top li:hover {
+    background: #3FB871; 
+  }
+  .header .top li:hover a {
+    color: #FFFFFF; 
+    background: #3FB871;
+  }
+  .header .top .thoiggianmo:hover {
+    background: none;
+    color: none; 
+  }
+  .header .middle {
+    background-image: url(../images/bg.jpg); 
+  }
+  .mid-header .ct-text-2 {
+    margin: 30px 0 10px 25px;
+  }
+  .search-box {
+    position: relative;
+  }
+  .search-box .input-control {
+    padding: 10px 25px;
+    border-radius: 70px;
+    width: 100%;
+    height: 42px;
+  }
+  .input-control {
+    border: solid 1px #e1e1e1;
+    padding: 5px;
+  }
+  .input-control:focus{
+    outline:none;border-color:#3fb871
+  }
+  .top-header .social a {
+    font-size: 15px;
+    padding: 0 8px;
+    border-right: solid 1px #2b2b2b;
+  }
+  .top-header .social a:nth-of-type(1) {
+    border-left: solid 1px #2b2b2b;
+  }
+  .top-header .customer a {
+    font-size: 13px;
+    padding: 0 15px;
+    border-right: solid 1px #2b2b2b;
+  }
+  .top-header .customer a:first-child {
+    margin-right: -10px;
+    border-left: solid 1px #2b2b2b;
+    border-right: none;
+  }
+  .search-box button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #acacac;
+    width: 42px;
+    height: 32px;
+    border-left: solid 1px #ebebeb;
+  }
+  .mid-header .mini-cart {
+    text-align: right;
+    padding-top: 65px;
+  }
+  .mid-header .mini-cart .fa {
+    font-size: 18px;
+  }
+
+
+  /* Navbar */
+  .navbar {
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: 0;
+    padding: 0 0 5px 0;
+    margin: 0;
+    font-size: 14px; 
+  }
+  .navbar a {
+    color: gray; 
+  }
+  .navbar .navbar-toggle {
+    border: 1px solid #FFFFFF; 
+    margin-left: 15px;
+  }
+  .navbar .navbar-toggle .icon-bar {
+    background: #FFFFFF; 
+  }
+  .navbar .navbar-nav li > a{
+    border: 2px solid transparent;
+  }
+  .navbar .navbar-nav li:hover > a{
+    border-bottom: 2px solid #c21835 !important;
+    color: #c21835;
+  }
+  .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    border-color: #FFFFFF;
+  }
+  .navbar .navbar-nav li a:hover,
+  .navbar .navbar-nav li a:focus,
+  .navbar .navbar-nav li a:active,
+  .navbar .navbar-nav li:hover,
+  .navbar .navbar-nav li:focus,
+  .navbar .navbar-nav li:active,
+  .navbar .navbar-nav li.active,
+  .navbar .navbar-nav .open > a,
+  .navbar .navbar-nav .open > a:focus
+  .open > a:active {
+     background: #FFFFFF;
+  }
+  .navbar .navbar-nav .dropdown-menu {
+    background: #FFFFFF !important;
+  }
+  .navbar .navbar-nav .dropdown-menu a {
+    color: gray;
+  }
+
+  /* Slider */
+  .slider .owl-nav {
+    width: 100%; 
+  }
+  .slider .owl-nav .owl-next,
+  .slider .owl-nav .owl-prev {
+    font-size: 20px;
+    background: grey;
+    background: rgba(128, 128, 128, 0.55);
+    position: absolute;
+    top: 30%; 
+  }
+  .slider .owl-nav .owl-next {
+    right: 0; 
+  }
+  .slider .owl-nav .owl-prev {
+    left: 0; 
+  }
+  .slider .owl-dots {
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+  }
+
+  /* Footer */
+  .footer {
+    color: #828282;
+    background-color: #313131;
+    margin-top: 50px;
+    padding-top: 20px;  
+  }
+  #footer a {
+    color: #b7b7b7;
+  }
+  #footer a:hover {
+    color: #3fb871;
+  }
+  .top-footer {
+    padding: 20px 0;
+  }
+  .top-footer p {
+    margin-bottom: 0;
+  }
+  .top-footer label {
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+  }
+  .mid-footer {
+    border-top: solid 1px #494949;
+    padding-top: 20px;
+  }
+  .form-newsletter {
+    margin-bottom: 0;
+  }
+  .form-newsletter label {
+    width: 25%;
+    float: left;
+  }
+  .form-newsletter .form-group {
+    margin-bottom: 0;
+  }
+  .form-newsletter .form-group {
+    position: relative;
+    width: 75%;
+    float: left;
+    padding-left: 75px;
+  }
+  .form-newsletter .form-group .input-control {
+    width: 100%;
+    height: 45px;
+    padding: 7px 50px 7px 10px;
+  }
+  .form-newsletter .form-group button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    outline: none;
+    border: none;
+    background-color: #3fb871;
+    color: #fff;
+  }
+  .top-footer label {
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+  }
+  .top-footer .social a {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  .footer .logo {
+    margin: 10px 0; 
+  }
+  .footer .mxh {
+    margin-top: 20px; 
+  }
+  .footer .mxh .fa {
+    color: #898989; 
+  }
+  .footer .mxh .fa:hover {
+    color: #3FB871; 
+  }
+  .footer .mxh a {
+    display: block; 
+  }
+  .footer .title {
+    color: #3fb871;
+    font-weight: bold;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .footer ul li {
+    margin-bottom: 10px; 
+  }
+  .footer .a:hover {
+    color: #3FB871; 
+  }
+  .footer .bar {
+    height: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    background: #434343;
+    margin-top: 20px; 
+  }
+
+  /**
+   * =============== custom ==================
+   */
+   /* Panel xanh */
+   .panel-xanh {
+    box-shadow: none;
+    -webkit-box-shadow: none; 
+  }
+  .panel-xanh .panel-heading {
+    padding: 10px 0px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d5d5d5; 
+  }
+  .panel-xanh .panel-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #59b586;
+    font-family: 'Roboto Slab', serif;
+    /* color: #59b586; */
+    display: inline;
+    padding-bottom: 11px;
+    border-bottom: 2px solid #3FB871; 
+  }
+  .panel-xanh .panel-title.big {
+    font-size: 20px;
+    word-spacing: 3px;
+    letter-spacing: 5px;
+    text-transform: uppercase; 
+  }
+
+  /* 1 san pham */
+  .product-grid form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 11;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+  .product-grid:hover form {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+  .product-grid form .action {
+    width: 100%;
+    margin-top: -23px;
+    position: absolute;
+    top: 50%;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .button {
+    display: inline-block;
+    color: #fff;
+    border: 0;
+    outline: none;
+    text-transform: uppercase;
+    background-color: #3fb871;
+    padding: 0 20px;
+    border-radius: 20px;
+    line-height: 44px;
+  }
+  .button-cricle {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background-color: #fff;
+    color: #363533;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .button-cricle:hover {
+    color: #fff !IMPORTANT;;
+    background-color: #4CC57E;
+  }
+  .sanpham {
+    border: 1px solid #d5d5d5;
+    transition: all 0.3s ease;
+    margin-bottom: 30px; 
+  }
+  .sanpham .hinh {
+    overflow: hidden; 
+  }
+  .sanpham .hinh a {
+    /*display: block; */
+  }
+  .sanpham .hinh img {
+    display: block;
+    width: 100%;
+    transition: all 0.2s linear; 
+  }
+  .hinh {    
+    position: relative;
+  }
+  .hinh span.sale {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    text-align: center;
+    background-color: #d64146;
+    color: #fff;
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    z-index: 22;
+  }
+  .sanpham .thongtin {
+    padding: 10px 5px 10px 5px;
+    text-align: center; 
+  }
+  .sanpham .thongtin .ten {
+    color: #333333;
+    font-size: 16px; 
+  }
+  .sanpham .thongtin .ten a {
+    display: block; 
+  }
+  .sanpham .thongtin .gia {
+    color: red;
+    font-weight: bold;
+    font-size: 110%; 
+  }
+  .sanpham .thongtin .giagach {
+    color: grey;
+    font-style: italic;
+    text-decoration: line-through; 
+  }
+  /*.sanpham:hover, .sanpham:focus, .sanpham:active {
+    transform: translateY(-2px); 
+  }
+  .sanpham:hover .hinh, .sanpham:focus .hinh, .sanpham:active .hinh {
+    opacity: 0.8; 
+  }
+  .sanpham:hover img, .sanpham:focus img, .sanpham:active img {
+    transform: scale(1.3, 1.3); 
+    }*/
+    .sanpham:hover a, .sanpham:focus a, .sanpham:active a {
+      color: #3FB871; 
+    }
+
+    .sanpham2 {
+      clear: both;
+      display: block;
+      border: 1px solid #d5d5d5;
+      transition: all 0.2 ease; 
+    }
+    .sanpham2 .hinh {
+      float: left;
+      width: 30%; 
+    }
+    .sanpham2 .hinh img {
+      width: 100%;
+      transition: all 0.6s ease; 
+    }
+    .sanpham2 .thongtin {
+      float: right;
+      width: 70%;
+      padding-left: 5%; 
+    }
+    .sanpham2 .thongtin .ten {
+      color: #333333;
+      font-size: 14px; 
+    }
+    .sanpham2 .thongtin .ten a {
+      display: block; 
+    }
+    .sanpham2 .thongtin .gia {
+      color: red;
+      font-weight: bold;
+      font-size: 110%; 
+    }
+    .sanpham2 .thongtin .giagach {
+      color: grey;
+      font-style: italic;
+      text-decoration: line-through; 
+    }
+    .sanpham2:hover {
+      margin-left: 1px; 
+    }
+    .sanpham2:hover img {
+      transform: scale(1.1, 1.1); 
+    }
+    .sanpham2:hover .ten {
+      color: #3FB871; 
+    }
+
+  /**
+   * ============ something else ==============
+   */
+   /* tin tuc */
+   .tintuc ul {
+    padding: 0; 
+  }
+  .tintuc li {
+    width: 31.2%;
+    float: left;
+    display: block;
+    margin-left: 30px; 
+  }
+  .tintuc li div {
+    margin-bottom: 10px; 
+  }
+  .tintuc .item .date {
+    font-style: italic;
+    margin-top: 10px;
+  }
+  .tintuc h3 {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .tintuc a {
+    color: #3fb871;
+  }
+  .tintuc .item .summary {
+    text-align: justify; 
+  }
+  .tintuc .item .readmore a {
+    color: #3FB871; 
+  }
+  .tintuc .item:first-child {
+    margin-left: 0; 
+  }
+  .tintuc .item:hover img {
+    opacity: 0.5; 
+  }
+
+  /* san pham khuyen mai */
+  .sanphamkhuyenmai {
+    clear: both; 
+  }
+  .sanphamkhuyenmai .sanpham {
+    float: left; 
+  }
+  .sanphamkhuyenmai .owl-nav {
+    position: absolute;
+    top: -80px;
+    right: 0; 
+  }
+
+  /* san pham moi */
+  .sanphammoi {
+    clear: both; 
+  }
+  .sanphammoi .owl-nav {
+    position: absolute;
+    top: -80px;
+    right: 0; 
+  }
+
+  /* sanphammuanhieu */
+  .sanphammuanhieu .sanpham2 {
+    padding: 20px 11.3333px;
+    clear: fixed;
+    border-bottom: 0; 
+  }
+  .sanphammuanhieu .sanpham2.last {
+    border-bottom: 1px solid #d5d5d5; 
+  }
+
+  /* quang cao */
+  .quangcao {
+    margin-bottom: 20px; 
+  }
+
+  /* san pham noi bat */
+  .sanphamnoibat .left {
+    padding-left: 0; 
+  }
+  .sanphamnoibat .right {
+    padding-right: 0; 
+  }
+  .sanphamnoibat .sanpham {
+    width: 48%;
+    margin-bottom: 30px; 
+  }
+  .sanphamnoibat .sanpham.big {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+    clear: both; 
+  }
+
+  /**
+   * ================ responsive ==============
+   */
+   /* Large Devices, Wide Screens */
+   /* Medium Devices, Desktops */
+   /* Small Devices, Tablets */
+   @media screen and (max-width: 991px){
+
+    .sanphamnoibat .col-xs-12,.sanphamnoibat .col-md-6 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .form-newsletter label {
+      display: block;
+      float: none;
+      margin-bottom: 10px;
+      width: auto;
+    }
+    .form-newsletter .form-group {
+      width: 100%;
+      float: none;
+      padding-left: 0;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .slider img {
+      width: 100%;
+      height: 320px; 
+    }
+
+    .sanphamnoibat .right {
+      padding-left: 1%; 
+    }
+    .sanphamnoibat .left {
+      padding-right: 1%; 
+    }
+
+    .tintuc li {
+      width: 32%;
+      float: left;
+      display: block;
+      margin-left: 2%; 
+    } 
+  }
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width: 480px) {
+    .slider img {
+      width: 100%;
+      height: 175px; 
+    }
+
+    .tintuc li {
+      width: 100%;
+      margin: 0; 
+    }
+
+    .sanphamnoibat .left,
+    .sanphamnoibat .right {
+      padding: 0; 
+    }
+    .sanphamnoibat .sanpham {
+      margin-bottom: 2% !important; 
+    }
+    .sanphamnoibat .sanpham .big {
+      clear: both; 
+    }
+
+  }
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 320px) {
+    .tintuc li {
+      width: 100%;
+      margin: 0; 
+    } 
+  }
+/*******************************************************************************************
+**    content course 28/8/2017
+**
+**/
+.content-course{
+  width: 100%;
+  text-align: center; 
+}
+.content-course img{
+  width: 95px;
+  height: 95px;
+}
+  /*# sourceMappingURL=style.css.map */

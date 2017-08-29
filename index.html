@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+
+<!-- Mirrored from taisang.tk/working-at-dosvn/template-greenshop/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Sep 2016 02:08:32 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#3FB871">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="msapplication-navbutton-color" content="#3FB871">
+    <!-- Windows Phone -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- iOS Safari -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+    <title>Green Shop</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.green.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        // Custom Javascript
+        $(document).ready(function () {
+            $slider = $('#slider');
+            $slider.addClass('owl-carousel owl-theme');
+            $slider.owlCarousel({
+                items: 1,
+                dots: true,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                loop: true,
+                navText: ["<i class=\"fa fa-angle-left fa-lg\"></i>", "<i class=\"fa fa-angle-right fa-lg\"></i>"]
+            });
+
+            $sanphammoi = $('#sanphammoi');
+            $sanphammoi.addClass('owl-carousel owl-theme');
+            $sanphammoi.owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 6000,
+                autoplayHoverPause: true,
+                nav: true,
+                navText: ["<i class=\"fa fa-angle-left fa-lg\"></i>", "<i class=\"fa fa-angle-right fa-lg\"></i>"],
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            });
+
+            $sanphamkhuyenmai = $('#sanphamkhuyenmai');
+            $sanphamkhuyenmai.addClass('owl-carousel owl-theme');
+            $sanphamkhuyenmai.owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 6000,
+                autoplayHoverPause: true,
+                dots: false,
+                nav: true,
+                navText: ["<i class=\"fa fa-angle-left fa-lg\"></i>", "<i class=\"fa fa-angle-right fa-lg\"></i>"],
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- <div class="header">
+                <div class="top top-header hidden-xs ">
+                    <div class="container">
+                        <div class="col-md-6 social">
+                            <ul class="pull-left">
+                                <li class="thoiggianmo"><i class="fa fa-clock-o"></i> Thời gian mở cửa từ 6:00AM - 6:00PM </li>
+                                <li class="hidden-xs"><a href="#"><i class="fa fa-fw fa-facebook"></i></a></li>
+                                <li class="hidden-xs"><a href="#"><i class="fa fa-fw fa-twitter"></i></a></li>
+                                <li class="hidden-xs"><a href="#"><i class="fa fa-fw fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 customer">
+                            <ul class="list-unstyled list-inline pull-right">
+                                <li><a href="#"><i class="fa fa-fw fa-user"></i> Đăng nhập</a></li>
+                                <li><a href="#"><i class="fa fa-fw fa-user-plus"></i> Đăng ký</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle mid-header">
+                    <div class="container">
+                        <div class="col-md-5">
+                            <a href="#"><img src="images/logo.png" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="col-md-offset-1 col-md-4 hidden-xs hidden-sm">
+                            <p class="ct-text-2"><i class="fa fa-phone"></i> (04) 6674 2332 - (04) 3786 8904</p>
+                            <form action="https://greenshop-theme.bizwebvietnam.net/search" class="search-box">
+                                <input type="text" name="query" class="input-control" placeholder="Tìm kiếm...">
+                                <button><i class="fa fa-search"></i></button>
+                            </form> 
+                        </div>
+                        <div class="col-md-2 hidden-xs hidden-sm mini-cart">
+                            <a href="https://greenshop-theme.bizwebvietnam.net/cart"><i class="fa fa-shopping-basket"></i> 0 sản phẩm</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
+    <!-- end Header -->
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand visible-xs" href="#">English</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#"><img alt="logo" src="images/pct-logo.png" width="19px"/>Trang chủ</a> </li>
+                    <li> <a href="#">Giới thiệu</a> </li>
+                    <li> <a href="#">Khóa học luyện nói tiếng Anh</a> </li>
+                    <li> <a href="#">Luyện nói tiếng Anh tại công ty</a> </li>
+                    <li> <a href="#">Khóa học IELTS</a> </li>
+                    <li> <a href="#">Thi thử IELTS</a> </li>
+                    <li> <button class="btn btn-default">Đăng ký</button></li>
+                    <li> <button class="btn btn-default">Đăng nhập</button> </li>
+
+                    <!-- <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Slider -->
+    <div class="slider">
+        <div id="slider1">
+            <div class="item"><a href="#"><img src="images/slideshow1.jpg" class="img-responsive" alt=""></a></div>
+            <div class="item"><a href="#"><img src="images/slideshow2.jpg" class="img-responsive" alt=""></a></div>
+        </div>
+    </div>
+    <!-- end Slider -->
+    <!-- Cac khoa hoc -->
+    <div class="container content-course">
+        <div class="col-xs-3">
+            <img class="img-circle img-thumbnail" alt="logo_content" src="images/pct-logo.png" />
+            <h1>Pre IELTS</h1>
+            <p>
+                Khóa Pre IELTS (đầu vào IELTS 3.0-3.5) cung cấp kiến thức nền tảng cơ bản vững chắc cho học viên IELTS về các kĩ năng Nói,
+                Viết, Nghe và Đọc cần thiết chuẩn bị cho kì thi IELTS. Lớp học sẽ tập trung vào các điểm Phát âm, Ngữ pháp,
+                Từ vựng và các kỹ năng làm bài cần thiết cho IELTS.
+            </p>
+        </div>
+        <div class="col-xs-3">
+            <img class="img-circle img-thumbnail" alt="logo_content" src="images/pct-logo.png" />
+            <h1>Pre IELTS</h1>
+            <p>
+                Khóa Pre IELTS (đầu vào IELTS 3.0-3.5) cung cấp kiến thức nền tảng cơ bản vững chắc cho học viên IELTS về các kĩ năng Nói,
+                Viết, Nghe và Đọc cần thiết chuẩn bị cho kì thi IELTS. Lớp học sẽ tập trung vào các điểm Phát âm, Ngữ pháp,
+                Từ vựng và các kỹ năng làm bài cần thiết cho IELTS.
+            </p>
+        </div>
+        <div class="col-xs-3">
+            <img class="img-circle img-thumbnail" alt="logo_content" src="images/pct-logo.png" />
+            <h1>Pre IELTS</h1>
+            <p>
+                Khóa Pre IELTS (đầu vào IELTS 3.0-3.5) cung cấp kiến thức nền tảng cơ bản vững chắc cho học viên IELTS về các kĩ năng Nói,
+                Viết, Nghe và Đọc cần thiết chuẩn bị cho kì thi IELTS. Lớp học sẽ tập trung vào các điểm Phát âm, Ngữ pháp,
+                Từ vựng và các kỹ năng làm bài cần thiết cho IELTS.
+            </p>
+        </div>
+        <div class="col-xs-3">
+            <img class="img-circle img-thumbnail" alt="logo_content" src="images/pct-logo.png" />
+            <h1>Pre IELTS</h1>
+            <p>
+                Khóa Pre IELTS (đầu vào IELTS 3.0-3.5) cung cấp kiến thức nền tảng cơ bản vững chắc cho học viên IELTS về các kĩ năng Nói,
+                Viết, Nghe và Đọc cần thiết chuẩn bị cho kì thi IELTS. Lớp học sẽ tập trung vào các điểm Phát âm, Ngữ pháp,
+                Từ vựng và các kỹ năng làm bài cần thiết cho IELTS.
+            </p>
+        </div>
+    </div>
+    <!-- End cac khoa hoc -->
+    
+    <!-- Footer -->
+    <div class="footer" id="footer">
+        <div class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 social">
+                        <p>
+                            <label>Kênh thông tin từ chúng tôi:</label><br>
+                            <a href="https://greenshop-theme.bizwebvietnam.net/#"><i class="fa fa-facebook"></i></a>
+                            <a href="https://greenshop-theme.bizwebvietnam.net/#"><i class="fa fa-twitter"></i></a>
+                            <a href="https://greenshop-theme.bizwebvietnam.net/#"><i class="fa fa-google-plus"></i></a>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                        <form action="https://greenshop-theme.bizwebvietnam.net/#" class="form-newsletter">
+                            <label>
+                                    Đăng ký nhận email từ chúng tôi
+                                </label>
+                            <div class="form-group">
+                                <input class="input-control" type="text">
+                                <button><i class="fa fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container mid-footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="logo"><img src="images/footer-logo.png" class="img-responsive" alt="Image"></div>
+                    <p>Mang cả không gian xanh vào ngôi nhà của bạn!</p>
+                    <p><i class="fa fa-phone"></i> Điện thoại : <a href="tel:01234 4321 32">0936 777 170</a></p>
+                    <p><i class="fa fa-envelope-o"></i> Email : <a href="mailto:taisang1996@gmail.com">minhsu0602@gmail.com</a></p>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <div class="title">VỀ CHÚNG TÔI</div>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <div class="title">VỀ CHÚNG TÔI</div>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <div class="title">VỀ CHÚNG TÔI</div>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <div class="title">VỀ CHÚNG TÔI</div>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="container">
+                Dựa trên <a href="https://greenshop-theme.bizwebvietnam.net/" target="_blank">https://greenshop-theme.bizwebvietnam.net/</a>
+            </div>
+        </div>
+    </div>
+    <!-- end Footer -->
+</body>
+
+
+<!-- Mirrored from taisang.tk/working-at-dosvn/template-greenshop/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Sep 2016 02:10:22 GMT -->
+
+</html>
