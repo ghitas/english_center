@@ -671,11 +671,6 @@
     }
   }
   @media only screen and (max-width: 768px) {
-    .slider img {
-      width: 100%;
-      height: 320px; 
-    }
-
     .sanphamnoibat .right {
       padding-left: 1%; 
     }
@@ -692,11 +687,6 @@
   }
   /* Extra Small Devices, Phones */
   @media only screen and (max-width: 480px) {
-    .slider img {
-      width: 100%;
-      height: 175px; 
-    }
-
     .tintuc li {
       width: 100%;
       margin: 0; 
@@ -742,15 +732,14 @@
   border: 2px dotted violet;
   border-radius: 10px;
   padding: 20px 25px;
-  height: 638px;
 }
 .register .input-group label{
   background-color: #FFFFFF;
   border-radius: 0 4px 4px 0 !important;
 }
 .register img{
-  width: 200px;
-  height: 200px;
+  width: 170px;
+  height: 170px;
 }
 .register > input{ margin: 20px 0px;}
 .register .input-group{ margin: 20px 0px;}
@@ -763,8 +752,16 @@
 }
 .c-align-center{ text-align: center;}
 #btn-reg-test{
-  border-bottom: 5px solid #204d74;
+  border-bottom: 5px solid #301c63;
+  background-color: #7765a3;
+  color: white;
+  font-size: 16px;
+  padding: 15px 50px;
+  border-radius: 8px;
+  border-style: inset;
   transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
 }
 #btn-reg-test:hover{
   border-bottom: 1px solid gray;
