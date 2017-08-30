@@ -28,16 +28,16 @@
   
   /* Link */
   a {
-    color: #898989;
+    color: white;
     text-decoration: none;
     transition: all 0.2s ease; 
   }
   a:hover, a:active, a:focus {
-    color: #3FB871;
+    color: white;
     text-decoration: none; 
   }
   h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+    margin: 20px auto;
   }
 
   /**
@@ -45,11 +45,11 @@
    */
    /* Header */
    .header .top {
-    color: #898989;
+    color: white;
     font-size: 13px;
     height: 32px;
     line-height: 32px;
-    background-color: #202020; 
+    background-color: #7765a3; 
   }
   .header .top ul {
     list-style: none;
@@ -68,12 +68,12 @@
     padding-left: 0;
   }
   a
-  .header .top li:hover {
+   .header .top li:hover {
     background: #3FB871; 
-  }
+  } 
   .header .top li:hover a {
-    color: #FFFFFF; 
-    background: #3FB871;
+    color: #301c63; 
+    background-color: rgba(255,255,255,.4);
   }
   .header .top .thoiggianmo:hover {
     background: none;
@@ -81,6 +81,7 @@
   }
   .header .middle {
     background-image: url(../images/bg.jpg); 
+    padding: 10px 8px;
   }
   .mid-header .ct-text-2 {
     margin: 30px 0 10px 25px;
@@ -161,8 +162,8 @@
     border: 2px solid transparent;
   }
   .navbar .navbar-nav > li:hover > a{
-    border-bottom: 2px solid #c21835 !important;
-    color: #c21835 !important;
+    border-bottom: 2px solid #7765a3 !important;
+    color: #7765a3 !important;
   }
   .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
     border-color: #FFFFFF;
@@ -230,7 +231,13 @@
     bottom: 0;
     width: 100%; 
   }
-
+  .slider #sliderFooter .item img{
+    height: auto;
+  }
+  .slider #sliderFooter2 .item img{
+    height: auto;
+    padding:5px;
+  }
   /* Footer */
   .footer {
     color: #828282;
@@ -320,11 +327,11 @@
     display: block; 
   }
   .footer .title {
-    color: #3fb871;
+    color: #b7b7b7;
     font-weight: bold;
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 8px;
   }
   .footer ul li {
     margin-bottom: 10px; 
@@ -340,7 +347,6 @@
     background: #434343;
     margin-top: 20px; 
   }
-
   /**
    * =============== custom ==================
    */
@@ -723,8 +729,11 @@
   text-align: center; 
 }
 .content-course img{
-  width: 95px;
-  height: 95px;
+  width: 200px;
+  height: 200px;
+}
+.content-course p{
+  font-size: 14px;
 }
 .classroom{
   margin: 20px auto;
@@ -733,10 +742,15 @@
   border: 2px dotted violet;
   border-radius: 10px;
   padding: 20px 25px;
+  height: 638px;
 }
 .register .input-group label{
   background-color: #FFFFFF;
   border-radius: 0 4px 4px 0 !important;
+}
+.register img{
+  width: 200px;
+  height: 200px;
 }
 .register > input{ margin: 20px 0px;}
 .register .input-group{ margin: 20px 0px;}
@@ -757,26 +771,21 @@
   margin-top: 4px;
 }
 @media only screen and (min-width: 0px) {
-  .classroom-review img{
-    height: 100px;
-  }
   .register span{
     font-size: 20px;
   }
-  .register img{ width: 150px; height: 150px;}
+  .mid-footer {
+    text-align: center;
+  }
 }
 @media only screen and (min-width: 768px) {
-  .classroom-review img{
-    height: 150px;
+  .mid-footer {
+    text-align: left;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .classroom-review img{
-    height: 250px;
-  }
   .register span{
     font-size: 25px;
   }
-  .register img{ width: 250px; height: 250px;}
 }
   /*# sourceMappingURL=style.css.map */
