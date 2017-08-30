@@ -80,7 +80,7 @@
     color: none; 
   }
   .header .middle {
-    background-image: url(../images/bg.jpg); 
+    background-image: url(../images/background.png); 
     padding: 10px 8px;
   }
   .mid-header .ct-text-2 {
@@ -215,10 +215,12 @@
   .slider .owl-nav .owl-next,
   .slider .owl-nav .owl-prev {
     font-size: 20px;
-    background: grey;
-    background: rgba(128, 128, 128, 0.55);
+    background: transparent;
     position: absolute;
     top: 40%; 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
   }
   .slider .owl-nav .owl-next {
     right: 0; 
@@ -237,6 +239,9 @@
   .slider #sliderFooter2 .item img{
     height: auto;
     padding:5px;
+  }
+  .owl-theme .owl-nav [class*='owl-']:hover {
+    background-color: rgba(128,0,160,0.55);
   }
   /* Footer */
   .footer {
