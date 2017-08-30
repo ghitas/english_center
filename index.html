@@ -8,8 +8,6 @@
 <!-- /Added by HTTrack -->
 
 <head>
-    <!-- su added -->
-    <!-- dau xanh added -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,18 +44,18 @@
                 items: 1,
                 dots: true,
                 nav: true,
-                autoplay: true,
+                autoplay: false,
                 autoplayTimeout: 3000,
                 autoplayHoverPause: true,
                 loop: true,
                 navText: ["<i class=\"fa fa-angle-left fa-lg\"></i>", "<i class=\"fa fa-angle-right fa-lg\"></i>"]
             });
 
-            $sanphammoi = $('#sanphammoi');
-            $sanphammoi.addClass('owl-carousel owl-theme');
-            $sanphammoi.owlCarousel({
+            $sliderFooter = $('#sliderFooter');
+            $sliderFooter.addClass('owl-carousel owl-theme');
+            $sliderFooter.owlCarousel({
                 loop: true,
-                autoplay: true,
+                autoplay: false,
                 autoplayTimeout: 6000,
                 autoplayHoverPause: true,
                 nav: true,
@@ -66,12 +64,6 @@
                 responsive: {
                     0: {
                         items: 1
-                    },
-                    600: {
-                        items: 2
-                    },
-                    1000: {
-                        items: 4
                     }
                 }
             });
@@ -80,7 +72,7 @@
             $sanphamkhuyenmai.addClass('owl-carousel owl-theme');
             $sanphamkhuyenmai.owlCarousel({
                 loop: true,
-                autoplay: true,
+                autoplay: false,
                 autoplayTimeout: 6000,
                 autoplayHoverPause: true,
                 dots: false,
@@ -151,7 +143,8 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -186,13 +179,15 @@
                         </ul>
                     </li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
     </nav>
     <!-- End navbar -->
     <!-- Slider -->
     <div class="slider">
-        <div id="slider1">
+        <div id="slider">
             <div class="item"><a href="#"><img src="images/slideshow1.jpg" class="img-responsive" alt=""></a></div>
             <div class="item"><a href="#"><img src="images/slideshow2.jpg" class="img-responsive" alt=""></a></div>
         </div>
@@ -200,7 +195,7 @@
     <!-- end Slider -->
     <!-- Cac khoa hoc -->
     <div class="container content-course">
-        <div class="col-xs-3">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
             <img class="img-circle img-thumbnail" alt="logo_content" src="images/pct-logo.png" />
             <h1>Pre IELTS</h1>
             <p>
@@ -209,7 +204,7 @@
                 Từ vựng và các kỹ năng làm bài cần thiết cho IELTS.
             </p>
         </div>
-        <div class="col-xs-3">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
             <img class="img-circle img-thumbnail" alt="logo_content" src="images/pct-logo.png" />
             <h1>Pre IELTS</h1>
             <p>
@@ -218,7 +213,7 @@
                 Từ vựng và các kỹ năng làm bài cần thiết cho IELTS.
             </p>
         </div>
-        <div class="col-xs-3">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
             <img class="img-circle img-thumbnail" alt="logo_content" src="images/pct-logo.png" />
             <h1>Pre IELTS</h1>
             <p>
@@ -227,7 +222,7 @@
                 Từ vựng và các kỹ năng làm bài cần thiết cho IELTS.
             </p>
         </div>
-        <div class="col-xs-3">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
             <img class="img-circle img-thumbnail" alt="logo_content" src="images/pct-logo.png" />
             <h1>Pre IELTS</h1>
             <p>
@@ -239,31 +234,22 @@
     </div>
     <!-- End cac khoa hoc -->
     <!-- Lop hoc -->
-    <div class="container">
-        <div class="classroom-review col-xs-12 col-md-8 col-sm-8">
-            <div class="col-xs-12 col-md-6 col-sm-6">
-                <a href="#" class="thumbnail">
-                <img src="images/class.jpg" alt="class pictures">
-                </a>
-            </div>
-            <div class="col-xs-12 col-md-6 col-sm-6">
-                <a href="#" class="thumbnail">
-                <img src="images/class2.jpg" alt="class pictures">
-                </a>
-            </div>
-            <div class="col-xs-12 col-md-6 col-sm-6">
-                <a href="#" class="thumbnail">
-                <img src="images/class3.jpg" alt="class pictures">
-                </a>
-            </div>
-            <div class="col-xs-12 col-md-6 col-sm-6">
-                <a href="#" class="thumbnail">
-                <img src="images/class4.jpg" alt="class pictures">
-                </a>
+    <div class="container classroom">
+        <div class="classroom-review col-xs-12 col-md-7">
+            <div class="slider">
+                <div id="sliderFooter">
+                    <div class="item"><a href="#"><img src="images/class.jpg" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="images/class2.jpg"  alt=""></a></div>
+                    <div class="item"><a href="#"><img src="images/class3.jpg" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="images/class4.jpg" alt=""></a></div>
+                </div>
             </div>
         </div>
-        <div class="register col-xs-12 col-md-4 col-sm-4">
+        <div class="register col-xs-12 col-md-5">
             <div class="c-align-center">
+                <div class="col-xs-12">
+                    <img class="img-circle img-thumbnail" alt="logo_content" src="images/register.png" />
+                </div>
                 <span>Đăng ký tư vấn khóa học</span>
             </div>
             <input class="form-control" placeholder="Họ và tên" />
@@ -310,13 +296,15 @@
         <p>
             – Cơ sở 1: 112 Nguyễn Đình Chiểu, P. Đakao, Q.1, TP.HCM (ghi danh, lớp học).</br>
             – Cơ sở 2: 140/54 Lê Đức Thọ, P. 6, Q. Gò Vấp, TP.HCM (chỉ là lớp học, học viên có nhu cầu ghi danh vui lòng liên hệ cơ sở
-            1).</br>
+            1).
+            </br>
             – Học viên có thể đăng ký kiểm tra đầu vào để xác định trình độ trước khi chọn lớp phù hợp.</br>
 
             – Chi tiết ưu đãi học phí (với hình thức này thì sẽ KHÔNG có học thử nhé các bạn).</br>
 
             + Giảm 10% nếu bạn điền form đăng ký (bên trên) và hoàn tất học phí (chuyển khoản) theo deadline ở trên.</br>
-            + Giảm thêm 5% nếu bạn đăng ký và hoàn tất học phí với 1 người bạn (sẽ là 10% nếu đăng ký và hoàn tất học phí với 2 người bạn). Lưu ý là sự giảm này áp dụng cho tất cả thành viên trong nhóm. </br>
+            + Giảm thêm 5% nếu bạn đăng ký và hoàn tất học phí với 1 người bạn (sẽ là 10% nếu đăng ký và hoàn tất học phí với 2 người
+            bạn). Lưu ý là sự giảm này áp dụng cho tất cả thành viên trong nhóm. </br>
             + Giảm thêm 10% nếu là học viên cũ.
         </p>
     </div>
@@ -343,7 +331,7 @@
     <!-- End google map -->
     <!-- Footer -->
     <div class="footer" id="footer">
-        <div class="top-footer">
+         <div class="top-footer">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-4 social">
@@ -368,62 +356,83 @@
 
                 </div>
             </div>
-        </div>
+        </div> 
         <div class="container mid-footer">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="logo"><img src="images/footer-logo.png" class="img-responsive" alt="Image"></div>
                     <p>Mang cả không gian xanh vào ngôi nhà của bạn!</p>
                     <p><i class="fa fa-phone"></i> Điện thoại : <a href="tel:01234 4321 32">0936 777 170</a></p>
                     <p><i class="fa fa-envelope-o"></i> Email : <a href="mailto:taisang1996@gmail.com">minhsu0602@gmail.com</a></p>
                 </div>
-                <div class="col-xs-6 col-sm-3 col-md-2">
-                    <div class="title">VỀ CHÚNG TÔI</div>
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                    <div class="title">Bài viết mới</div>
                     <ul class="list-unstyled">
-                        <li><a href="#">Trang chủ</a></li>
-                        <li><a href="#">Giới thiệu</a></li>
-                        <li><a href="#">Sản phẩm</a></li>
-                        <li><a href="#">Tin tức</a></li>
-                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="#">Bài viết mới nhất trong ngày hôm nay</a></li>
+                        <li><a href="#">Bài viết mới nhất trong ngày hôm nay</a></li>
+                        <li><a href="#">Bài viết mới nhất trong ngày hôm nay</a></li>
+                        <li><a href="#">Bài viết mới nhất trong ngày hôm nay</a></li>
+                        <li><a href="#">Bài viết mới nhất trong ngày hôm nay</a></li>
                     </ul>
                 </div>
-                <div class="col-xs-6 col-sm-3 col-md-2">
-                    <div class="title">VỀ CHÚNG TÔI</div>
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                    <div class="title">Từ khóa</div>
                     <ul class="list-unstyled">
-                        <li><a href="#">Trang chủ</a></li>
-                        <li><a href="#">Giới thiệu</a></li>
-                        <li><a href="#">Sản phẩm</a></li>
-                        <li><a href="#">Tin tức</a></li>
-                        <li><a href="#">Liên hệ</a></li>
+                        <div class="tagcloud"><a href="http://mcielts.com/tag/4-ky-nang/" class="tag-link-82 tag-link-position-1" title="5 topics"
+                                style="font-size: 13.333333333333pt;">4 kỹ năng</a>
+                            <a href="http://mcielts.com/tag/academic/" class="tag-link-85 tag-link-position-2" title="1 topic" style="font-size: 8pt;">academic</a>
+                            <a href="http://mcielts.com/tag/academy/" class="tag-link-54 tag-link-position-3" title="5 topics" style="font-size: 13.333333333333pt;">academy</a>
+                            <a href="http://mcielts.com/tag/aeisec/" class="tag-link-79 tag-link-position-4" title="1 topic" style="font-size: 8pt;">AEISEC</a>
+                            <a href="http://mcielts.com/tag/aty/" class="tag-link-57 tag-link-position-5" title="8 topics" style="font-size: 15.222222222222pt;">ATY</a>
+                            <a href="http://mcielts.com/tag/band-9/" class="tag-link-76 tag-link-position-6" title="1 topic" style="font-size: 8pt;">band 9</a>
+                            <a href="http://mcielts.com/tag/book/" class="tag-link-69 tag-link-position-7" title="19 topics" style="font-size: 19.111111111111pt;">book</a>
+                            <a href="http://mcielts.com/tag/charity/" class="tag-link-51 tag-link-position-8" title="3 topics" style="font-size: 11.333333333333pt;">charity</a>
+                            <a href="http://mcielts.com/tag/christmas/" class="tag-link-72 tag-link-position-9" title="1 topic" style="font-size: 8pt;">christmas</a>
+                            <a href="http://mcielts.com/tag/club/" class="tag-link-17 tag-link-position-10" title="7 topics" style="font-size: 14.666666666667pt;">club</a>
+                            <a href="http://mcielts.com/tag/collins/" class="tag-link-74 tag-link-position-11" title="1 topic" style="font-size: 8pt;">Collins</a>
+                            <a href="http://mcielts.com/tag/dictionary/" class="tag-link-68 tag-link-position-12" title="5 topics" style="font-size: 13.333333333333pt;">dictionary</a>
+                            <a href="http://mcielts.com/tag/economy/" class="tag-link-47 tag-link-position-13" title="1 topic" style="font-size: 8pt;">economy</a>
+                            <a href="http://mcielts.com/tag/english/" class="tag-link-18 tag-link-position-14" title="19 topics" style="font-size: 19.111111111111pt;">english</a>
+                            <a href="http://mcielts.com/tag/esc/" class="tag-link-65 tag-link-position-15" title="4 topics" style="font-size: 12.444444444444pt;">esc</a>
+                            <a href="http://mcielts.com/tag/events/" class="tag-link-45 tag-link-position-16" title="20 topics" style="font-size: 19.333333333333pt;">events</a>
+                            <a href="http://mcielts.com/tag/grammar/" class="tag-link-59 tag-link-position-17" title="8 topics" style="font-size: 15.222222222222pt;">grammar</a>
+                            <a href="http://mcielts.com/tag/highschool/" class="tag-link-50 tag-link-position-18" title="3 topics" style="font-size: 11.333333333333pt;">highschool</a>
+                            <a href="http://mcielts.com/tag/ielts/" class="tag-link-16 tag-link-position-19" title="35 topics" style="font-size: 22pt;">ielts</a>
+                            <a href="http://mcielts.com/tag/junior/" class="tag-link-42 tag-link-position-20" title="3 topics" style="font-size: 11.333333333333pt;">junior</a>
+                            <a href="http://mcielts.com/tag/law/" class="tag-link-48 tag-link-position-21" title="1 topic" style="font-size: 8pt;">law</a>
+                            <a href="http://mcielts.com/tag/listening/" class="tag-link-84 tag-link-position-22" title="5 topics" style="font-size: 13.333333333333pt;">listening</a>
+                            <a href="http://mcielts.com/tag/listenning/" class="tag-link-73 tag-link-position-23" title="4 topics" style="font-size: 12.444444444444pt;">listenning</a>
+                            <a href="http://mcielts.com/tag/longman/" class="tag-link-61 tag-link-position-24" title="3 topics" style="font-size: 11.333333333333pt;">longman</a>
+                        </div>
                     </ul>
                 </div>
-                <div class="col-xs-6 col-sm-3 col-md-2">
-                    <div class="title">VỀ CHÚNG TÔI</div>
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                    <div class="title">Facebook</div>
                     <ul class="list-unstyled">
-                        <li><a href="#">Trang chủ</a></li>
-                        <li><a href="#">Giới thiệu</a></li>
-                        <li><a href="#">Sản phẩm</a></li>
-                        <li><a href="#">Tin tức</a></li>
-                        <li><a href="#">Liên hệ</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-6 col-sm-3 col-md-2">
-                    <div class="title">VỀ CHÚNG TÔI</div>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Trang chủ</a></li>
-                        <li><a href="#">Giới thiệu</a></li>
-                        <li><a href="#">Sản phẩm</a></li>
-                        <li><a href="#">Tin tức</a></li>
-                        <li><a href="#">Liên hệ</a></li>
+                        <div class="fb-page" data-href="https://www.facebook.com/Ehouse.hcmc/" data-width="400" data-small-header="false" data-adapt-container-width="true"
+                            data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/Ehouse.hcmc/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/Ehouse.hcmc/">Mỹ phẩm thiên nhiên KS - III</a>
+                            </blockquote>
+                        </div>
+                        <script>
+                            (function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s); js.id = id;
+                                js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.9";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));
+                        </script>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="bar">
+        <!-- <div class="bar">
             <div class="container">
                 Dựa trên <a href="https://greenshop-theme.bizwebvietnam.net/" target="_blank">https://greenshop-theme.bizwebvietnam.net/</a>
             </div>
-        </div>
+        </div> -->
     </div>
     <!-- end Footer -->
 </body>

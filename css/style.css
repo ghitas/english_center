@@ -208,13 +208,8 @@
     .c-nav-left{ float:left;}
   }
   /* Slider */
-  .slider{
-    margin-left: auto;
-    margin-right: auto;
-    display: table;
-  }
   .slider .owl-nav {
-    width: 200px; 
+    width: 100%; 
   }
   .slider .owl-nav .owl-next,
   .slider .owl-nav .owl-prev {
@@ -222,7 +217,7 @@
     background: grey;
     background: rgba(128, 128, 128, 0.55);
     position: absolute;
-    top: 30%; 
+    top: 40%; 
   }
   .slider .owl-nav .owl-next {
     right: 0; 
@@ -240,7 +235,6 @@
   .footer {
     color: #828282;
     background-color: #313131;
-    margin-top: 50px;
     padding-top: 20px;  
   }
   #footer a {
@@ -732,11 +726,13 @@
   width: 95px;
   height: 95px;
 }
+.classroom{
+  margin: 20px auto;
+}
 .register{
   border: 2px dotted violet;
   border-radius: 10px;
   padding: 20px 25px;
-  margin: 20px 0px;
 }
 .register .input-group label{
   background-color: #FFFFFF;
@@ -767,6 +763,7 @@
   .register span{
     font-size: 20px;
   }
+  .register img{ width: 150px; height: 150px;}
 }
 @media only screen and (min-width: 768px) {
   .classroom-review img{
@@ -780,5 +777,6 @@
   .register span{
     font-size: 25px;
   }
+  .register img{ width: 250px; height: 250px;}
 }
   /*# sourceMappingURL=style.css.map */
