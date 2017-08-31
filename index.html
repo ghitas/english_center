@@ -44,7 +44,7 @@
                 items: 1,
                 dots: true,
                 nav: true,
-                autoplay: false,
+                autoplay: true,
                 autoplayTimeout: 3000,
                 autoplayHoverPause: true,
                 loop: true,
@@ -55,7 +55,7 @@
             $sliderFooter.addClass('owl-carousel owl-theme');
             $sliderFooter.owlCarousel({
                 loop: true,
-                autoplay: false,
+                autoplay: true,
                 autoplayTimeout: 6000,
                 autoplayHoverPause: true,
                 nav: true,
@@ -72,7 +72,7 @@
             $sliderFooter2.addClass('owl-carousel owl-theme');
             $sliderFooter2.owlCarousel({
                 loop: true,
-                autoplay: false,
+                autoplay: true,
                 autoplayTimeout: 6000,
                 autoplayHoverPause: true,
                 dots: false,
@@ -96,13 +96,31 @@
     <script type="text/javascript">
         // Script for top Navigation Menu
         jQuery(window).bind('scroll', function () {
-          if (jQuery(window).scrollTop() > 10) {
-            jQuery('#header-2').addClass('navbar-fixed-top').removeClass('topnavbar');
-            jQuery('body').addClass('bodytopmargin').removeClass('bodynomargin');
-          } else {
-            jQuery('#header-2').removeClass('navbar-fixed-top').addClass('topnavbar');
-            jQuery('body').removeClass('bodytopmargin').addClass('bodynomargin');
-          }
+            if (jQuery(window).scrollTop() > 10) {
+                jQuery('#header-2').addClass('navbar-fixed-top').removeClass('topnavbar');
+                jQuery('body').addClass('bodytopmargin').removeClass('bodynomargin');
+            } else {
+                jQuery('#header-2').removeClass('navbar-fixed-top').addClass('topnavbar');
+                jQuery('body').removeClass('bodytopmargin').addClass('bodynomargin');
+            }
+            if (jQuery(window).scrollTop() > 200) {
+                jQuery('.content-course img').addClass('animation');
+            }
+            if (jQuery(window).scrollTop() > 700) {
+                jQuery('.register img').addClass('animation');
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        // Script for top Navigation Menu
+        jQuery(window).bind('scroll', function () {
+            if (jQuery(window).scrollTop() > 10) {
+                jQuery('#header-2').addClass('navbar-fixed-top').removeClass('topnavbar');
+                jQuery('body').addClass('bodytopmargin').removeClass('bodynomargin');
+            } else {
+                jQuery('#header-2').removeClass('navbar-fixed-top').addClass('topnavbar');
+                jQuery('body').removeClass('bodytopmargin').addClass('bodynomargin');
+            }
         });
     </script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -151,46 +169,44 @@
     </div>
     <!-- end Header -->
     <!-- Navbar -->
-    <div id="header-2">
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                        aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav c-nav-left">
-                        <li><a href="#">Giới thiệu<span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">Khóa học luyện nói tiếng Anh</a></li>
-                        <li><a href="#">Luyện nói tiếng Anh tại công ty</a></li>
-                        <li><a href="#">Khóa học IELTS</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Thi thử IELTS<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">IELTS 5.0</a></li>
-                                <li><a href="#">IELTS 6.0</a></li>
-                                <li><a href="#">IELTS 7.0</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">IELTS MASTER OVER SKILL</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Liên hệ</a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+    <nav id="header-2" class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-            <!-- /.container-fluid -->
-        </nav>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav c-nav-left">
+                    <li><a href="#">Giới thiệu<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Khóa học luyện nói tiếng Anh</a></li>
+                    <li><a href="#">Luyện nói tiếng Anh tại công ty</a></li>
+                    <li><a href="#">Khóa học IELTS</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Thi thử IELTS<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">IELTS 5.0</a></li>
+                            <li><a href="#">IELTS 6.0</a></li>
+                            <li><a href="#">IELTS 7.0</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">IELTS MASTER OVER SKILL</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
     </div>
     <!-- End navbar -->
     <!-- Slider -->
@@ -244,64 +260,68 @@
     <!-- End cac khoa hoc -->
     <!-- Lop hoc -->
     <div class="container classroom">
-        <div class="col-xs-12 col-md-8 col-sm-7">
+        <div id="class-pics" class="col-xs-12 col-md-7">
+            <h3 class="c-align-center">Hình ảnh lớp học</h3>
             <div class="slider">
                 <div id="sliderFooter">
-                    <div class="item"><a href="#"><img src="images/slider.jpg" alt=""></a></div>
-                    <div class="item"><a href="#"><img src="images/slider1.jpg"  alt=""></a></div>
-                    <div class="item"><a href="#"><img src="images/slider2.jpg" alt=""></a></div>
-                    <div class="item"><a href="#"><img src="images/slider3.jpg" alt=""></a></div>
-                    <div class="item"><a href="#"><img src="images/slider4.jpg" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="images/slider.jpg" alt="room pic"></a></div>
+                    <div class="item"><a href="#"><img src="images/slider1.jpg"  alt="room pic"></a></div>
+                    <div class="item"><a href="#"><img src="images/slider2.jpg" alt="room pic"></a></div>
+                    <div class="item"><a href="#"><img src="images/slider3.jpg" alt="room pic"></a></div>
+                    <div class="item"><a href="#"><img src="images/slider4.jpg" alt="room pic"></a></div>
                 </div>
             </div>
             <div class="slider">
                 <div id="sliderFooter2">
-                    <div class="item"><a href="#"><img src="images/slider.jpg" alt=""></a></div>
-                    <div class="item"><a href="#"><img src="images/slider1.jpg"  alt=""></a></div>
-                    <div class="item"><a href="#"><img src="images/slider2.jpg" alt=""></a></div>
-                    <div class="item"><a href="#"><img src="images/slider3.jpg" alt=""></a></div>
-                    <div class="item"><a href="#"><img src="images/slider4.jpg" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="images/slider.jpg" alt="room pic"></a></div>
+                    <div class="item"><a href="#"><img src="images/slider1.jpg"  alt="room pic"></a></div>
+                    <div class="item"><a href="#"><img src="images/slider2.jpg" alt="room pic"></a></div>
+                    <div class="item"><a href="#"><img src="images/slider3.jpg" alt="room pic"></a></div>
+                    <div class="item"><a href="#"><img src="images/slider4.jpg" alt="room pic"></a></div>
                 </div>
             </div>
         </div>
-        <div class="register col-xs-12 col-md-4 col-sm-5">
-            <div class="c-align-center">
-                <div class="col-xs-12">
-                    <img class="img-circle img-thumbnail" alt="logo_content" src="images/register.png" />
+        <div id="class-res" class="col-xs-12 col-md-5">
+            <h3 class="c-align-center">Đăng ký tư vấn khóa học</h3>
+            <div class="register">
+                <span class="col-xs-12"></span>
+                <div class="c-align-center">
+                    <div class="col-xs-12">
+                        <img class="img-circle img-thumbnail" alt="logo_content" src="images/register.png" />
+                    </div>
                 </div>
-                <span>Đăng ký tư vấn khóa học</span>
-            </div>
-            <input class="form-control" placeholder="Họ và tên" />
-            <input class="form-control" placeholder="Số điện thoại" />
-            <input class="form-control" placeholder="Email" />
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Khóa học cần tư vấn">
-                <label class="input-group-addon dropdown-toggle" data-toggle="dropdown">
+                <input class="form-control" placeholder="Họ và tên" />
+                <input class="form-control" placeholder="Số điện thoại" />
+                <input class="form-control" placeholder="Email" />
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Khóa học cần tư vấn">
+                    <label class="input-group-addon dropdown-toggle" data-toggle="dropdown">
                     <span class="caret"></span>
                 </label>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">IELTS 5.0</a></li>
-                    <li><a href="#">IELTS 7.0</a></li>
-                    <li><a href="#">IELTS 9.0</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">IELTS SUPER MASTER</a></li>
-                </ul>
-            </div>
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Tự đánh giá cấp độ">
-                <label class="input-group-addon dropdown-toggle" data-toggle="dropdown">
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">IELTS 5.0</a></li>
+                        <li><a href="#">IELTS 7.0</a></li>
+                        <li><a href="#">IELTS 9.0</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">IELTS SUPER MASTER</a></li>
+                    </ul>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Tự đánh giá cấp độ">
+                    <label class="input-group-addon dropdown-toggle" data-toggle="dropdown">
                     <span class="caret"></span>
                 </label>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                </ul>
-            </div>
-            <div class="c-align-center">
-                <button class="btn btn-info">Gửi thông tin</button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="c-align-center">
+                    <button class="btn btn-info">Gửi thông tin</button>
+                </div>
             </div>
         </div>
     </div>
@@ -313,15 +333,17 @@
         </div>
         <div class="wpb_wrapper">
             <div style="text-align: justify;">
-                <div><span style="font-size: 8.5pt;">&nbsp;</span><span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold;"><span style="font-size: 12pt;">Lưu ý:</span></span>
-                    <span
-                        style="font-size: 12pt;"><br>
-                        </span>
+                <div>
+                    <span style="font-size: 8.5pt;">&nbsp;</span>
+                    <span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold;">
+                        <span style="font-size: 12pt;">Lưu ý:</span>
+                    </span>
+                    <span style="font-size: 12pt;"><br></span>
                 </div>
             </div>
-            <div style="text-align: justify;">– Cơ sở 1: 112 Nguyễn Đình Chiểu, P. Đakao, Q.1, TP.HCM (ghi danh, lớp học).</div>
-            <div style="text-align: justify;">– Cơ sở 2: 140/54 Lê Đức Thọ, P. 6, Q. Gò Vấp, TP.HCM (chỉ là lớp học, học viên có nhu cầu ghi danh vui lòng
-                liên hệ cơ sở 1).</div>
+            <div style="text-align: justify;"><span style="font-size: 12pt;">– Cơ sở 1: 112 Nguyễn Đình Chiểu, P. Đakao, Q.1, TP.HCM (ghi danh, lớp học).</span></div>
+            <div style="text-align: justify;"><span style="font-size: 12pt;">– Cơ sở 2: 140/54 Lê Đức Thọ, P. 6, Q. Gò Vấp, TP.HCM (chỉ là lớp học, học viên có nhu cầu ghi danh vui lòng
+                liên hệ cơ sở 1).</span></div>
             <div style="text-align: justify;">
                 <p><span style="font-size: 12pt;">– Học viên có thể đăng ký kiểm tra đầu vào để xác định trình độ trước khi chọn lớp phù hợp.</span></p>
                 <p><span style="font-size: 12pt;">– Chi tiết ưu đãi học phí (với hình thức này thì sẽ KHÔNG có học thử nhé các bạn.)</span></p>
@@ -340,13 +362,12 @@
             <div style="text-align: justify;"></div>
             <div style="text-align: justify;">
                 <p><span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold;"><span style="font-size: 12pt;">Lưu ý:</span></span>
-                    <span
-                        style="font-size: 12pt;">&nbsp; &nbsp;– Tất cả học viên các lớp IELTS thiếu niên cần đăng ký kiểm tra đầu vào để xác định trình
+                    <span style="font-size: 12pt;">&nbsp; &nbsp;– Tất cả học viên các lớp IELTS thiếu niên cần đăng ký kiểm tra đầu vào để xác định trình
                         lớp học phù hợp.</span>
                 </p>
                 <p><span style="font-size: 12pt;">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;– &nbsp;Không có buổi học thử đối các với lớp IELTS thiếu niên</span></p>
                 <p><span style="font-size: 12pt;"><br style="box-sizing: border-box; margin: 0px; padding: 0px;"><br style="box-sizing: border-box; margin: 0px; padding: 0px;"></span></p>
-                
+
             </div>
 
         </div>
@@ -466,16 +487,8 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="bar">
-            <div class="container">
-                Dựa trên <a href="https://greenshop-theme.bizwebvietnam.net/" target="_blank">https://greenshop-theme.bizwebvietnam.net/</a>
-            </div>
-        </div> -->
     </div>
     <!-- end Footer -->
 </body>
-
-
-<!-- Mirrored from taisang.tk/working-at-dosvn/template-greenshop/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Sep 2016 02:10:22 GMT -->
 
 </html>
