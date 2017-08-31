@@ -732,7 +732,16 @@
 }
 .classroom{
   margin: 20px auto;
+  display: inline-block; 
 }
+.classroom:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  }
 .register{
   border: 2px dotted violet;
   border-radius: 10px;
