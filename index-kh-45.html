@@ -51,45 +51,16 @@
                 navText: ["<i class=\"fa fa-angle-left fa-lg\"></i>", "<i class=\"fa fa-angle-right fa-lg\"></i>"]
             });
 
-            $sliderFooter = $('#sliderFooter');
-            $sliderFooter.addClass('owl-carousel owl-theme');
-            $sliderFooter.owlCarousel({
-                loop: true,
-                autoplay: false,
-                autoplayTimeout: 6000,
-                autoplayHoverPause: true,
-                nav: true,
-                navText: ["<i class=\"fa fa-angle-left fa-lg\"></i>", "<i class=\"fa fa-angle-right fa-lg\"></i>"],
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    }
-                }
-            });
-
-            $sliderFooter2 = $('#sliderFooter2');
-            $sliderFooter2.addClass('owl-carousel owl-theme');
-            $sliderFooter2.owlCarousel({
-                loop: true,
-                autoplay: false,
-                autoplayTimeout: 6000,
-                autoplayHoverPause: true,
-                dots: false,
-                nav: true,
-                navText: ["<i class=\"fa fa-angle-left fa-lg\"></i>", "<i class=\"fa fa-angle-right fa-lg\"></i>"],
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 2
-                    },
-                    1000: {
-                        items: 3
-                    }
-                }
+            $sliderCource = $('#slider-cource');
+            $sliderCource.addClass('owl-carousel owl-theme');
+            $sliderCource.owlCarousel({
+                items:1,
+                loop:false,
+                center:true,
+                margin:10,
+                URLhashListener:true,
+                autoplayHoverPause:true,
+                startPosition: 'URLHash'
             });
         });
     </script>
@@ -224,181 +195,65 @@
         </div>
     </div>
     <!-- end Slider -->
-    <!-- Cac khoa hoc -->
-    <div class="container content-course">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-            <img class="img-circle img-thumbnail" alt="logo_content" src="images/art1.png" />
-            <h2>Pre IELTS</h2>
-            <p>
-                Khóa Pre IELTS (đầu vào IELTS 3.0-3.5) cung cấp kiến thức nền tảng cơ bản vững chắc cho học viên IELTS về các kĩ năng Nói,
-                Viết, Nghe và Đọc cần thiết chuẩn bị cho kì thi IELTS. Lớp học sẽ tập trung vào các điểm Phát âm, Ngữ pháp,
-                Từ vựng và các kỹ năng làm bài cần thiết cho IELTS.
-            </p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-            <img class="img-circle img-thumbnail" alt="logo_content" src="images/art2.png" />
-            <h2>Pre IELTS</h2>
-            <p>
-                Khóa Pre IELTS (đầu vào IELTS 3.0-3.5) cung cấp kiến thức nền tảng cơ bản vững chắc cho học viên IELTS về các kĩ năng Nói,
-                Viết, Nghe và Đọc cần thiết chuẩn bị cho kì thi IELTS. Lớp học sẽ tập trung vào các điểm Phát âm, Ngữ pháp,
-                Từ vựng và các kỹ năng làm bài cần thiết cho IELTS.
-            </p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-            <img class="img-circle img-thumbnail" alt="logo_content" src="images/art3.png" />
-            <h2>Pre IELTS</h2>
-            <p>
-                Khóa Pre IELTS (đầu vào IELTS 3.0-3.5) cung cấp kiến thức nền tảng cơ bản vững chắc cho học viên IELTS về các kĩ năng Nói,
-                Viết, Nghe và Đọc cần thiết chuẩn bị cho kì thi IELTS. Lớp học sẽ tập trung vào các điểm Phát âm, Ngữ pháp,
-                Từ vựng và các kỹ năng làm bài cần thiết cho IELTS.
-            </p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-            <img class="img-circle img-thumbnail" alt="logo_content" src="images/art4.png" />
-            <h2>Pre IELTS</h2>
-            <p>
-                Khóa Pre IELTS (đầu vào IELTS 3.0-3.5) cung cấp kiến thức nền tảng cơ bản vững chắc cho học viên IELTS về các kĩ năng Nói,
-                Viết, Nghe và Đọc cần thiết chuẩn bị cho kì thi IELTS. Lớp học sẽ tập trung vào các điểm Phát âm, Ngữ pháp,
-                Từ vựng và các kỹ năng làm bài cần thiết cho IELTS.
-            </p>
-        </div>
-    </div>
-    <!-- End cac khoa hoc -->
-    <!-- Lop hoc -->
-    <div class="container classroom">
-        <div id="class-pics" class="col-xs-12 col-md-7">
-            <h3 class="c-align-center">Hình ảnh lớp học</h3>
-            <div class="slider">
-                <div id="sliderFooter">
-                    <div class="item"><a href="#"><img src="images/slider.jpg" alt="room pic"></a></div>
-                    <div class="item"><a href="#"><img src="images/slider1.jpg"  alt="room pic"></a></div>
-                    <div class="item"><a href="#"><img src="images/slider2.jpg" alt="room pic"></a></div>
-                    <div class="item"><a href="#"><img src="images/slider3.jpg" alt="room pic"></a></div>
-                    <div class="item"><a href="#"><img src="images/slider4.jpg" alt="room pic"></a></div>
+    <!-- Khoa hoc 45 nguoi -->
+    <div class="presentation container">
+        <h2>Luyện nói nhóm 4-5 bạn cùng 100% GVNN</h2>
+        <p>Khóa Pre IELTS cung cấp kiến thức nền tảng cơ bản vững chắc cho học viên IELTS về các kĩ năng Nói, Viết, Nghe và
+            Đọc cần thiết chuẩn bị cho kì thi IELTS. Lớp học sẽ tập trung vào các điểm phát âm, ngữ pháp, từ vựng và các
+            kỹ năng làm bài cần thiết cho IELTS. Để tham gia khóa luyện thi Pre-IELTS, các bạn cần có kỹ năng Nói, Viết,
+            Nghe và Đọc ở trình độ căn bản.
+        </p>
+        <a class="button secondary url" href="#zero">zero</a> 
+        <a class="button secondary url" href="#three">three</a> 
+        <a class="button secondary url" href="#five">five</a> 
+        <a class="button secondary url" href="#seven">seven</a> 
+        <a class="button secondary url" href="#ten">ten</a> 
+        <div class="slider">
+            <div id="slider-cource">
+                <div class="item" data-hash="zero">
+                    <ul>
+                        <li>
+                            <h6>Đầu vào: Band <strong><span style="color: #ff0000;">3.0-3.5</span></strong>, tiếng Anh căn bản.</h6>
+                        </li>
+                        <li>
+                            <h6>Lịch học: thứ Hai &amp; Tư hoặc thứ Ba-Năm (18-21h).</h6>
+                        </li>
+                        <li>
+                            <h6>Thời gian: 18-21h.</h6>
+                        </li>
+                        <li>
+                            <h6>Thời lượng: 60 giờ-10 tuần (20 buổi).</h6>
+                        </li>
+                        <li>
+                            <h6>Học phí: 5.3 triệu đồng/ khóa.</h6>
+                        </li>
+                        <li>
+                            <h6>Sỉ số: 15-20 bạn/ lớp.</h6>
+                        </li>
+                        <li>
+                            <h6>Giáo viên: Việt Nam (2/3 thời lượng)+ Bản ngữ (1/3 thời lượng).</h6>
+                        </li>
+                        <li>
+                            <h6>Kỹ năng: Listening, Reading, Speaking và Writing.</h6>
+                        </li>
+                        <li>
+                            <h6>Địa chỉ: 112 Nguyễn Đình Chiểu, Phường Đakao, Quận 1.</h6>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="slider">
-                <div id="sliderFooter2">
-                    <div class="item"><a href="#"><img src="images/slider.jpg" alt="room pic"></a></div>
-                    <div class="item"><a href="#"><img src="images/slider1.jpg"  alt="room pic"></a></div>
-                    <div class="item"><a href="#"><img src="images/slider2.jpg" alt="room pic"></a></div>
-                    <div class="item"><a href="#"><img src="images/slider3.jpg" alt="room pic"></a></div>
-                    <div class="item"><a href="#"><img src="images/slider4.jpg" alt="room pic"></a></div>
-                </div>
-            </div>
-        </div>
-        <div id="class-res" class="col-xs-12 col-md-5">
-            <h3 class="c-align-center">Đăng ký tư vấn khóa học</h3>
-            <div class="register">
-                <span class="col-xs-12"></span>
-                <div class="c-align-center">
-                    <div class="col-xs-12">
-                        <img class="img-circle img-thumbnail" alt="logo_content" src="images/register.png" />
+                <div class="item" data-hash="three">
+                    <div class="wpb_wrapper">
+                        <h6>Tất cả các học viên trước khi đăng ký các khóa học luyện thi IELTS tại Mc IELTS cần tham gia một
+                            bài kiểm tra đầu vào với giảng viên IELTS tại trung tâm.<br> Sau bài thi kiểm tra trình độ, dựa
+                            trên kết quả bài kiểm tra, giáo viên sẽ đưa ra lời khuyên về cấp độ lớp phù hợp nhất dựa trên
+                            trình độ và nguyện vọng của học viên.</h6>
+                        <p>Các bạn vui lòng xem Cấu trúc bài kiểm tra trình độ, Thời gian, và Đăng ký&nbsp;tại <a href="http://mcielts.com/blogs/lich-khai-giang/1000183813-lich-khai-giang">ĐÂY</a>.</p>
                     </div>
                 </div>
-                <input class="form-control" placeholder="Họ và tên" />
-                <input class="form-control" placeholder="Số điện thoại" />
-                <input class="form-control" placeholder="Email" />
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Khóa học cần tư vấn">
-                    <label class="input-group-addon dropdown-toggle" data-toggle="dropdown">
-                    <span class="caret"></span>
-                </label>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">IELTS 5.0</a></li>
-                        <li><a href="#">IELTS 7.0</a></li>
-                        <li><a href="#">IELTS 9.0</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">IELTS SUPER MASTER</a></li>
-                    </ul>
-                </div>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Tự đánh giá cấp độ">
-                    <label class="input-group-addon dropdown-toggle" data-toggle="dropdown">
-                    <span class="caret"></span>
-                </label>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </div>
-                <div class="c-align-center">
-                    <button class="btn btn-info">Gửi thông tin</button>
-                </div>
             </div>
         </div>
     </div>
-    <!-- End lop hoc -->
-    <!-- Đăng ký kiểm tra trình độ và lưu ý -->
-    <div class="seft-test container">
-        <div class="c-align-center">
-            <button id="btn-reg-test" class="btn"><i class="fa fa-file-text-o"></i>&nbsp;&nbsp; Đăng ký kiểm tra trình độ</button>
-        </div>
-        <div class="wpb_wrapper">
-            <div style="text-align: justify;">
-                <div>
-                    <span style="font-size: 8.5pt;">&nbsp;</span>
-                    <span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold;">
-                        <span style="font-size: 12pt;">Lưu ý:</span>
-                    </span>
-                    <span style="font-size: 12pt;"><br></span>
-                </div>
-            </div>
-            <div style="text-align: justify;"><span style="font-size: 12pt;">– Cơ sở 1: 112 Nguyễn Đình Chiểu, P. Đakao, Q.1, TP.HCM (ghi danh, lớp học).</span></div>
-            <div style="text-align: justify;"><span style="font-size: 12pt;">– Cơ sở 2: 140/54 Lê Đức Thọ, P. 6, Q. Gò Vấp, TP.HCM (chỉ là lớp học, học viên có nhu cầu ghi danh vui lòng
-                liên hệ cơ sở 1).</span></div>
-            <div style="text-align: justify;">
-                <p><span style="font-size: 12pt;">– Học viên có thể đăng ký kiểm tra đầu vào để xác định trình độ trước khi chọn lớp phù hợp.</span></p>
-                <p><span style="font-size: 12pt;">– Chi tiết ưu đãi học phí (với hình thức này thì sẽ KHÔNG có học thử nhé các bạn.)</span></p>
-                <p><span style="font-size: 12pt;">&nbsp; &nbsp;+ Giảm 10% nếu bạn điền form đăng ký (bên trên) và hoàn tất học phí (chuyển khoản) theo deadline ở trên.</span><br>
-                    <span style="font-size: 12pt;">&nbsp; &nbsp;+ Giảm thêm 5% nếu bạn đăng ký và hoàn tất học phí với 1 người bạn (sẽ là 10% nếu đăng ký và hoàn tất học phí với 2 người bạn). Lưu ý là sự giảm này áp dụng cho tất cả thành viên trong nhóm.</span><br>
-                    <span style="font-size: 12pt;">&nbsp; &nbsp;+ Giảm thêm 10% nếu là học viên cũ.</span></p>
-            </div>
-            <div style="text-align: justify;"><span style="font-size: 12pt;">– Hình thức thanh toán học phí:</span></div>
-            <div style="text-align: justify;"><span style="font-size: 12pt;">1/ Đóng trực tiếp tại cơ sở 1&nbsp;(112 Nguyễn Đình Chiểu, P.Đakao, Quận 1, TP.HCM)<br>
-    </span><span style="font-size: 12pt;">2/ Chuyển khoản ngân hàng:</span></div>
-            <div style="text-align: justify;"><span style="font-size: 12pt;"> &nbsp; + Số tài khoản 0421 000 461 474</span></div>
-            <div style="text-align: justify;"><span style="font-size: 12pt;">&nbsp; + Ngân hàng Vietcombank- Chi nhánh&nbsp;Phú Thọ – PGD Nguyễn Sơn</span></div>
-            <div style="text-align: justify;"><span style="font-size: 12pt;">&nbsp; + Chủ tài khoản: Bui Vu Viet Bao</span></div>
-            <div style="text-align: justify;"></div>
-            <div style="text-align: justify;"><span style="font-size: 12pt;">Các bạn nhớ ghi nội dung chuyển khoản là họ tên+SĐT+tên lớp. Vd: Nguyen Van A 09000011111 Advanced 08/03.</span></div>
-            <div style="text-align: justify;"></div>
-            <div style="text-align: justify;">
-                <p><span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold;"><span style="font-size: 12pt;">Lưu ý:</span></span>
-                    <span style="font-size: 12pt;">&nbsp; &nbsp;– Tất cả học viên các lớp IELTS thiếu niên cần đăng ký kiểm tra đầu vào để xác định trình
-                        lớp học phù hợp.</span>
-                </p>
-                <p><span style="font-size: 12pt;">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;– &nbsp;Không có buổi học thử đối các với lớp IELTS thiếu niên</span></p>
-                <p><span style="font-size: 12pt;"><br style="box-sizing: border-box; margin: 0px; padding: 0px;"><br style="box-sizing: border-box; margin: 0px; padding: 0px;"></span></p>
-
-            </div>
-
-        </div>
-    </div>
-    <!-- End reg and note -->
-    <!-- Google map -->
-    <div class="container">
-        <div id="map" style="width:100%;height:450px; margin-bottom: 20px" class="col-lg-12"></div>
-        <script>
-            function myMap() {
-                var myCenter = new google.maps.LatLng(11.087386, 107.036523);
-                var mapCanvas = document.getElementById("map");
-                var mapOptions = { center: myCenter, zoom: 15, scrollwheel: false, alt: "ehouse coffe" };
-                var map = new google.maps.Map(mapCanvas, mapOptions);
-                var marker = new google.maps.Marker({ position: myCenter });
-                marker.setMap(map);
-
-                var infowindow = new google.maps.InfoWindow({
-                    content: "ehouse coffe"
-                });
-            }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA28Z3iKdILw1QtJk0P_I-R_hhVDYp6PA8&callback=myMap"></script>
-    </div>
-    <!-- End google map -->
+    <!-- End khoa hoc 45 nguoi -->
     <!-- Footer -->
     <div class="footer" id="footer">
         <div class="top-footer">
