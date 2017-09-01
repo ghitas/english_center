@@ -88,20 +88,11 @@ jQuery(window).bind('scroll', function () {
         jQuery('#header-2').removeClass('navbar-fixed-top').addClass('topnavbar');
         jQuery('body').removeClass('bodytopmargin').addClass('bodynomargin');
     }
-    if (jQuery(window).scrollTop() > 200 && jQuery(window).scrollTop() < 300) {
+    if (jQuery(window).scrollTop() > 150 && jQuery(window).scrollTop() < 300) {
         jQuery('.content-course img').animateCss('bounce');
     }
-    if (jQuery(window).scrollTop() > 700 && jQuery(window).scrollTop() < 800) {
+    if (jQuery(window).scrollTop() > 600 && jQuery(window).scrollTop() < 800) {
         jQuery('.register img').animateCss('tada');
-    }
-});
-jQuery(window).bind('scroll', function () {
-    if (jQuery(window).scrollTop() > 10) {
-        jQuery('#header-2').addClass('navbar-fixed-top').removeClass('topnavbar');
-        jQuery('body').addClass('bodytopmargin').removeClass('bodynomargin');
-    } else {
-        jQuery('#header-2').removeClass('navbar-fixed-top').addClass('topnavbar');
-        jQuery('body').removeClass('bodytopmargin').addClass('bodynomargin');
     }
 });
 $.fn.extend({
