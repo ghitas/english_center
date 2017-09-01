@@ -30,105 +30,13 @@
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.green.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- Javascript -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script>
-        // Custom Javascript
-        $(document).ready(function () {
-            $slider = $('#slider');
-            $slider.addClass('owl-carousel owl-theme');
-            $slider.owlCarousel({
-                items: 1,
-                dots: true,
-                nav: true,
-                autoplay: false,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true,
-                loop: true,
-                navText: ["<i class=\"fa fa-angle-left fa-lg\"></i>", "<i class=\"fa fa-angle-right fa-lg\"></i>"]
-            });
-
-            $sliderFooter = $('#sliderFooter');
-            $sliderFooter.addClass('owl-carousel owl-theme');
-            $sliderFooter.owlCarousel({
-                loop: true,
-                autoplay: false,
-                autoplayTimeout: 6000,
-                autoplayHoverPause: true,
-                nav: true,
-                navText: ["<i class=\"fa fa-angle-left fa-lg\"></i>", "<i class=\"fa fa-angle-right fa-lg\"></i>"],
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    }
-                }
-            });
-
-            $sliderFooter2 = $('#sliderFooter2');
-            $sliderFooter2.addClass('owl-carousel owl-theme');
-            $sliderFooter2.owlCarousel({
-                loop: true,
-                autoplay: false,
-                autoplayTimeout: 6000,
-                autoplayHoverPause: true,
-                dots: false,
-                nav: true,
-                navText: ["<i class=\"fa fa-angle-left fa-lg\"></i>", "<i class=\"fa fa-angle-right fa-lg\"></i>"],
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 2
-                    },
-                    1000: {
-                        items: 3
-                    }
-                }
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        // Script for top Navigation Menu
-        jQuery(window).bind('scroll', function () {
-            if (jQuery(window).scrollTop() > 10) {
-                jQuery('#header-2').addClass('navbar-fixed-top').removeClass('topnavbar');
-                jQuery('body').addClass('bodytopmargin').removeClass('bodynomargin');
-            } else {
-                jQuery('#header-2').removeClass('navbar-fixed-top').addClass('topnavbar');
-                jQuery('body').removeClass('bodytopmargin').addClass('bodynomargin');
-            }
-            if (jQuery(window).scrollTop() > 200) {
-                jQuery('.content-course img').addClass('animation');
-            }
-            if (jQuery(window).scrollTop() > 700) {
-                jQuery('.register img').addClass('animation');
-            }
-        });
-    </script>
-    <script type="text/javascript">
-        // Script for top Navigation Menu
-        jQuery(window).bind('scroll', function () {
-            if (jQuery(window).scrollTop() > 10) {
-                jQuery('#header-2').addClass('navbar-fixed-top').removeClass('topnavbar');
-                jQuery('body').addClass('bodytopmargin').removeClass('bodynomargin');
-            } else {
-                jQuery('#header-2').removeClass('navbar-fixed-top').addClass('topnavbar');
-                jQuery('body').removeClass('bodytopmargin').addClass('bodynomargin');
-            }
-        });
-    </script>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-            <![endif]-->
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -193,9 +101,9 @@
                         </ul>
                     </li>
                     <li><a href="#">Luyện nói tiếng Anh tại công ty</a></li>
-                    <li><a href="#">Khóa học IELTS</a></li>
                 </ul>
                 <ul class="nav navbar-nav">
+                    <li><a href="#">Khóa học IELTS</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Thi thử IELTS<span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -227,7 +135,7 @@
     <!-- Cac khoa hoc -->
     <div class="container content-course">
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-            <img class="img-circle img-thumbnail" alt="logo_content" src="images/art1.png" />
+            <img class="img-circle img-thumbnail animated" alt="logo_content" src="images/art1.png" />
             <h2>Pre IELTS</h2>
             <p>
                 Khóa Pre IELTS (đầu vào IELTS 3.0-3.5) cung cấp kiến thức nền tảng cơ bản vững chắc cho học viên IELTS về các kĩ năng Nói,
@@ -236,7 +144,7 @@
             </p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-            <img class="img-circle img-thumbnail" alt="logo_content" src="images/art2.png" />
+            <img class="img-circle img-thumbnail animated" alt="logo_content" src="images/art2.png" style="animation-delay:0.2s"/>
             <h2>Pre IELTS</h2>
             <p>
                 Khóa Pre IELTS (đầu vào IELTS 3.0-3.5) cung cấp kiến thức nền tảng cơ bản vững chắc cho học viên IELTS về các kĩ năng Nói,
@@ -245,7 +153,7 @@
             </p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-            <img class="img-circle img-thumbnail" alt="logo_content" src="images/art3.png" />
+            <img class="img-circle img-thumbnail animated" alt="logo_content" src="images/art3.png"  style="animation-delay:0.4s"/>
             <h2>Pre IELTS</h2>
             <p>
                 Khóa Pre IELTS (đầu vào IELTS 3.0-3.5) cung cấp kiến thức nền tảng cơ bản vững chắc cho học viên IELTS về các kĩ năng Nói,
@@ -254,7 +162,7 @@
             </p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-            <img class="img-circle img-thumbnail" alt="logo_content" src="images/art4.png" />
+            <img class="img-circle img-thumbnail animated" alt="logo_content" src="images/art4.png"  style="animation-delay:0.6s"/>
             <h2>Pre IELTS</h2>
             <p>
                 Khóa Pre IELTS (đầu vào IELTS 3.0-3.5) cung cấp kiến thức nền tảng cơ bản vững chắc cho học viên IELTS về các kĩ năng Nói,
@@ -267,7 +175,7 @@
     <!-- Lop hoc -->
     <div class="container classroom">
         <div id="class-pics" class="col-xs-12 col-md-7">
-            <h3 class="c-align-center">Hình ảnh lớp học</h3>
+            <h3 class="text-center">Hình ảnh lớp học</h3>
             <div class="slider">
                 <div id="sliderFooter">
                     <div class="item"><a href="#"><img src="images/slider.jpg" alt="room pic"></a></div>
@@ -288,12 +196,12 @@
             </div>
         </div>
         <div id="class-res" class="col-xs-12 col-md-5">
-            <h3 class="c-align-center">Đăng ký tư vấn khóa học</h3>
+            <h3 class="text-center">Đăng ký tư vấn khóa học</h3>
             <div class="register">
                 <span class="col-xs-12"></span>
-                <div class="c-align-center">
+                <div class="text-center">
                     <div class="col-xs-12">
-                        <img class="img-circle img-thumbnail" alt="logo_content" src="images/register.png" />
+                        <img class="img-circle img-thumbnail animated" alt="logo_content" src="images/register.png" />
                     </div>
                 </div>
                 <input class="form-control" placeholder="Họ và tên" />
@@ -325,7 +233,7 @@
                         <li><a href="#">Separated link</a></li>
                     </ul>
                 </div>
-                <div class="c-align-center">
+                <div class="text-center">
                     <button class="btn btn-info">Gửi thông tin</button>
                 </div>
             </div>
@@ -334,7 +242,7 @@
     <!-- End lop hoc -->
     <!-- Đăng ký kiểm tra trình độ và lưu ý -->
     <div class="seft-test container">
-        <div class="c-align-center">
+        <div class="text-center">
             <button id="btn-reg-test" class="btn"><i class="fa fa-file-text-o"></i>&nbsp;&nbsp; Đăng ký kiểm tra trình độ</button>
         </div>
         <div class="wpb_wrapper">

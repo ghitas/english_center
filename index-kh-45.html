@@ -30,76 +30,14 @@
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.green.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- Javascript -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script>
-        // Custom Javascript
-        $(document).ready(function () {
-            $slider = $('#slider');
-            $slider.addClass('owl-carousel owl-theme');
-            $slider.owlCarousel({
-                items: 1,
-                dots: true,
-                nav: true,
-                autoplay: false,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true,
-                loop: true,
-                navText: ["<i class=\"fa fa-angle-left fa-lg\"></i>", "<i class=\"fa fa-angle-right fa-lg\"></i>"]
-            });
+    <script type="text/javascript" src="script.js"></script>
 
-            $sliderCource = $('#slider-cource');
-            $sliderCource.addClass('owl-carousel owl-theme');
-            $sliderCource.owlCarousel({
-                items:1,
-                loop:false,
-                center:true,
-                margin:10,
-                URLhashListener:true,
-                autoplayHoverPause:true,
-                startPosition: 'URLHash'
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        // Script for top Navigation Menu
-        jQuery(window).bind('scroll', function () {
-            if (jQuery(window).scrollTop() > 10) {
-                jQuery('#header-2').addClass('navbar-fixed-top').removeClass('topnavbar');
-                jQuery('body').addClass('bodytopmargin').removeClass('bodynomargin');
-            } else {
-                jQuery('#header-2').removeClass('navbar-fixed-top').addClass('topnavbar');
-                jQuery('body').removeClass('bodytopmargin').addClass('bodynomargin');
-            }
-            if (jQuery(window).scrollTop() > 200) {
-                jQuery('.content-course img').addClass('animation');
-            }
-            if (jQuery(window).scrollTop() > 700) {
-                jQuery('.register img').addClass('animation');
-            }
-        });
-    </script>
-    <script type="text/javascript">
-        // Script for top Navigation Menu
-        jQuery(window).bind('scroll', function () {
-            if (jQuery(window).scrollTop() > 10) {
-                jQuery('#header-2').addClass('navbar-fixed-top').removeClass('topnavbar');
-                jQuery('body').addClass('bodytopmargin').removeClass('bodynomargin');
-            } else {
-                jQuery('#header-2').removeClass('navbar-fixed-top').addClass('topnavbar');
-                jQuery('body').removeClass('bodytopmargin').addClass('bodynomargin');
-            }
-        });
-    </script>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-            <![endif]-->
 </head>
 
 <body>
@@ -196,21 +134,23 @@
     </div>
     <!-- end Slider -->
     <!-- Khoa hoc 45 nguoi -->
+
     <div class="presentation container">
-        <h2>Luyện nói nhóm 4-5 bạn cùng 100% GVNN</h2>
-        <p>Khóa Pre IELTS cung cấp kiến thức nền tảng cơ bản vững chắc cho học viên IELTS về các kĩ năng Nói, Viết, Nghe và
-            Đọc cần thiết chuẩn bị cho kì thi IELTS. Lớp học sẽ tập trung vào các điểm phát âm, ngữ pháp, từ vựng và các
-            kỹ năng làm bài cần thiết cho IELTS. Để tham gia khóa luyện thi Pre-IELTS, các bạn cần có kỹ năng Nói, Viết,
-            Nghe và Đọc ở trình độ căn bản.
-        </p>
-        <a class="button secondary url" href="#zero">zero</a> 
-        <a class="button secondary url" href="#three">three</a> 
-        <a class="button secondary url" href="#five">five</a> 
-        <a class="button secondary url" href="#seven">seven</a> 
-        <a class="button secondary url" href="#ten">ten</a> 
-        <div class="slider">
-            <div id="slider-cource">
-                <div class="item" data-hash="zero">
+        <div class="row">
+            <h2 class="text-center">Luyện nói nhóm 4-5 bạn cùng 100% GVNN</h2>
+            <p>Khóa Pre IELTS cung cấp kiến thức nền tảng cơ bản vững chắc cho học viên IELTS về các kĩ năng Nói, Viết, Nghe và
+                Đọc cần thiết chuẩn bị cho kì thi IELTS. Lớp học sẽ tập trung vào các điểm phát âm, ngữ pháp, từ vựng và các
+                kỹ năng làm bài cần thiết cho IELTS. Để tham gia khóa luyện thi Pre-IELTS, các bạn cần có kỹ năng Nói, Viết,
+                Nghe và Đọc ở trình độ căn bản.
+            </p>
+        </div>
+        <div class="row">
+            <ul class="nav nav-pills">
+                <li class="active"><a class="btn-slider-presentation" href="#tab_a" data-toggle="tab" aria-expanded="false"><i class="fa fa-info-circle"></i> Thông tin khóa học</a></li>
+                <li><a class="btn-slider-presentation" href="#tab_b" data-toggle="tab" aria-expanded="true"><i class="fa fa-registered"></i> Đăng kí khóa học</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane animated bounceInLeft active" id="tab_a">
                     <ul>
                         <li>
                             <h6>Đầu vào: Band <strong><span style="color: #ff0000;">3.0-3.5</span></strong>, tiếng Anh căn bản.</h6>
@@ -241,13 +181,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="item" data-hash="three">
+                <div class="tab-pane animated bounceInRight" id="tab_b">
                     <div class="wpb_wrapper">
                         <h6>Tất cả các học viên trước khi đăng ký các khóa học luyện thi IELTS tại Mc IELTS cần tham gia một
                             bài kiểm tra đầu vào với giảng viên IELTS tại trung tâm.<br> Sau bài thi kiểm tra trình độ, dựa
                             trên kết quả bài kiểm tra, giáo viên sẽ đưa ra lời khuyên về cấp độ lớp phù hợp nhất dựa trên
                             trình độ và nguyện vọng của học viên.</h6>
-                        <p>Các bạn vui lòng xem Cấu trúc bài kiểm tra trình độ, Thời gian, và Đăng ký&nbsp;tại <a href="http://mcielts.com/blogs/lich-khai-giang/1000183813-lich-khai-giang">ĐÂY</a>.</p>
+                        <h6>Các bạn vui lòng xem Cấu trúc bài kiểm tra trình độ, Thời gian, và Đăng ký&nbsp;tại <a href="http://mcielts.com/blogs/lich-khai-giang/1000183813-lich-khai-giang">ĐÂY</a>.</h6>
                     </div>
                 </div>
             </div>
