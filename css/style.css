@@ -568,6 +568,7 @@
 }
 .content-course p{
   font-size: 14px;
+  text-align: justify;
 }
 .content-course div:nth-child(1){
   color: rgba(60,15,15,.8);
@@ -620,10 +621,10 @@
   color: rgba(100,0,50,.6);
 }
 .c-align-center{ text-align: center;}
-#btn-reg-test{
+.btn-push-up{
   border-bottom: 5px solid #301c63;
   background-color: #7765a3;
-  color: white;
+  color: white !important;
   font-size: 16px;
   padding: 15px 50px;
   border-radius: 8px;
@@ -632,12 +633,21 @@
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
 }
-#btn-reg-test:hover{
+.btn-push-up:hover{
   border-bottom: 1px solid gray;
   margin-top: 4px;
 }
 .footer .tagcloud{
   text-align: justify;
+}
+@media only screen and (max-width: 768px){
+  .presentation .media-body{
+    display: block;
+    width: 100%;
+  }
+  .presentation .media-middle{
+    display: block;
+  } 
 }
 @media only screen and (min-width: 0px) {
   .register span{
@@ -654,6 +664,9 @@
   .mid-footer .row > div{
     min-height: 220px;
   }
+  .presentation .media-body{
+    width: 75%;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .register span{
@@ -669,6 +682,9 @@
 /* Khoa hoc 45 nguoi */
 #slider-cource .item h6{
   color:rebeccapurple;
+}
+.presentation{
+  margin-bottom: 15px;
 }
 .presentation a.btn-slider-presentation{
   display: inline-block;
