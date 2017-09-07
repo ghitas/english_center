@@ -77,7 +77,51 @@
     <!-- end Header -->
     <div>
     <!-- Navbar -->
-        <nav id="header-2" class="navbar navbar-default">
+    <nav id="header-1" class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav c-nav-left">
+                    <li><a href="#">Giới thiệu<span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Khóa học luyện nói tiếng Anh<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Luyện nói nhóm 4-5 bạn cùng 100% GVNN</a></li>
+                            <li><a href="#">Luyện nói nhóm 8 bạn cùng 100% GVNN</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Luyện nói tiếng Anh tại công ty</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Khóa học IELTS</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Thi thử IELTS<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">IELTS 5.0</a></li>
+                            <li><a href="#">IELTS 6.0</a></li>
+                            <li><a href="#">IELTS 7.0</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">IELTS MASTER OVER SKILL</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+        <nav id="header-2" class="navbar navbar-default hidden">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -122,56 +166,116 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- End navbar -->
-    <!-- Slider -->
-    <div class="slider">
-        <div id="slider">
-            <div class="item"><a href="#"><img src="images/banner2.jpg" class="img-responsive" alt=""></a></div>
-            <div class="item"><a href="#"><img src="images/banner1.jpg" class="img-responsive" alt=""></a></div>
-            <div class="item"><a href="#"><img src="images/banner.png" class="img-responsive" alt=""></a></div>
+    <!-- new slider -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+          <div class="blend">
+                <!-- thẻ div làm cho tấm hình ở dưới đen lại -->
+                <div></div>
+        <img src="images/slide5.jpg" alt="Los Angeles" style="width:100%;">
+          </div>
+        <div class="carousel-caption animated fadeInUp">
+          <h1>Los Angeles</h1>
+          <p>LA is always so much fun!</p>
         </div>
-    </div>
-    <!-- end Slider -->
+      </div>
+
+      <div class="item">
+          <div class="blend">
+                <div></div>
+        <img src="images/slide6.jpg" alt="Chicago" style="width:100%;">
+          </div>
+        <div class="carousel-caption animated fadeInUp">
+          <h1>Chicago</h1>
+          <p>Thank you, Chicago!</p>
+        </div>
+      </div>
+    
+      <div class="item">
+          <div class="blend">
+                <div></div>
+                <img src="images/slider3.jpg" alt="New York" style="width:100%;">
+          </div>
+        <div class="carousel-caption animated fadeInUp">
+          <h1>New York</h1>
+          <p>We love the Big Apple!</p>
+        </div>
+      </div>
+  
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+    <!-- end new slider -->
     </div>
     <!-- Cac khoa hoc -->
     <div class="container content-course">
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-            <img class="img-thumbnail animated" alt="logo_content" src="images/topic.jpg" />
-            <div class="content-course-title"><h4>Luyện nghe nói tiếng Anh theo nhóm cùng 100% GVNN</h4></div>
-            <!-- <p>Chương trình luyện nghe nói theo nhóm nhỏ từ căn bản đến nâng cao theo chương trình luyện nói riêng, 4-5 bạn/nhóm
-                hoặc 8 bạn/nhóm, học toàn bộ với giáo viên bản ngữ Anh, Mỹ, Úc, Canada,… Toàn bộ giáo viên có bằng cấp sư
-                phạm và kinh nghiệm dạy học lâu năm. Học viên sẽ được GVNN trực tiếp chỉnh sửa phát âm, luyện nghe, nói.
-                Đặc biệt, bạn có cơ hội học thử cùng chính GVNN dạy bạn trước khi quyết định tham gia khóa học.
-            </p> -->
+            <a href="#">
+                <img class="img-thumbnail animated" alt="logo_content" src="images/topic.jpg" />
+                <div class="content-course-title"><div><h4>Luyện nghe nói tiếng Anh theo nhóm cùng 100% GVNN</h4></div></div>
+                <!-- <p>Chương trình luyện nghe nói theo nhóm nhỏ từ căn bản đến nâng cao theo chương trình luyện nói riêng, 4-5 bạn/nhóm
+                    hoặc 8 bạn/nhóm, học toàn bộ với giáo viên bản ngữ Anh, Mỹ, Úc, Canada,… Toàn bộ giáo viên có bằng cấp sư
+                    phạm và kinh nghiệm dạy học lâu năm. Học viên sẽ được GVNN trực tiếp chỉnh sửa phát âm, luyện nghe, nói.
+                    Đặc biệt, bạn có cơ hội học thử cùng chính GVNN dạy bạn trước khi quyết định tham gia khóa học.
+                </p> -->
+            </a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-            <img class="img-thumbnail animated" alt="logo_content" src="images/topic2.jpg" style="animation-delay:0.2s" />
-            <div class="content-course-title"><h4>Luyện nghe nói tiếng Anh theo nhóm cùng 100% GVNN tại công ty</h4></div>
-            <!-- <p>
-                Chương trình luyện nghe nói tiếng Anh theo nhóm nhỏ cùng 100% giáo viên bản ngữ Anh, Mỹ, Úc, Canada,.. được thiết kế dành
-                cho người đi làm. Giáo viên sẽ trực tiếp chỉnh sửa phát âm, văn phạm, cách sử dụng từ phù hợp với ngữ cảnh.
-                Đặc biệt, đội ngũ GVNN tại Ehouse sẽ đến công ty và trực tiếp training cho học viên.
-            </p> -->
+            <a href="#">
+                <img class="img-thumbnail animated" alt="logo_content" src="images/topic2.jpg" style="animation-delay:0.2s" />
+                <div class="content-course-title"><div><h4>Luyện nghe nói tiếng Anh theo nhóm cùng 100% GVNN tại công ty</h4></div></div>
+                <!-- <p>
+                    Chương trình luyện nghe nói tiếng Anh theo nhóm nhỏ cùng 100% giáo viên bản ngữ Anh, Mỹ, Úc, Canada,.. được thiết kế dành
+                    cho người đi làm. Giáo viên sẽ trực tiếp chỉnh sửa phát âm, văn phạm, cách sử dụng từ phù hợp với ngữ cảnh.
+                    Đặc biệt, đội ngũ GVNN tại Ehouse sẽ đến công ty và trực tiếp training cho học viên.
+                </p> -->
+            </a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-            <img class="img-thumbnail animated" alt="logo_content" src="images/topic3.jpg" style="animation-delay:0.4s" />
-            <div class="content-course-title"><h4>Luyện thi IELTS cam kết đầu ra</h4></div>
-            <!-- <p>
-                Ehouse cung cấp chương trình luyện thi IELTS trang bị nền tảng Anh ngữ vững chắc để đạt được điểm IELTS tốt nhất với các
-                mức từ 4.0 – 6.5 với thời gian học linh hoạt. Chương trình luyện thi IELTS tại Ehouse sẽ trang bị đầy đủ
-                kiến thức và kĩ năng khi làm bài thi IELTS cho học viên và giúp học viên đạt được số điểm như mong muốn.
-                Mỗi khóa học được thiết kế riêng phù hợp với điểm số IELTS cần đạt được của học viên. Bên cạnh đó GV đứng
-                lớp là 100% GVNN có kinh nghiệm dạy IELTS nhiều năm tại các trường đại học tại Việt Nam  và các thầy sẽ đứng
-                lớp 100% thời lượng học.
-            </p> -->
+            <a href="#">
+                <img class="img-thumbnail animated" alt="logo_content" src="images/topic3.jpg" style="animation-delay:0.4s" />
+                <div class="content-course-title"><div><h4>Luyện thi IELTS cam kết đầu ra</h4></div></div>
+                <!-- <p>
+                    Ehouse cung cấp chương trình luyện thi IELTS trang bị nền tảng Anh ngữ vững chắc để đạt được điểm IELTS tốt nhất với các
+                    mức từ 4.0 – 6.5 với thời gian học linh hoạt. Chương trình luyện thi IELTS tại Ehouse sẽ trang bị đầy đủ
+                    kiến thức và kĩ năng khi làm bài thi IELTS cho học viên và giúp học viên đạt được số điểm như mong muốn.
+                    Mỗi khóa học được thiết kế riêng phù hợp với điểm số IELTS cần đạt được của học viên. Bên cạnh đó GV đứng
+                    lớp là 100% GVNN có kinh nghiệm dạy IELTS nhiều năm tại các trường đại học tại Việt Nam  và các thầy sẽ đứng
+                    lớp 100% thời lượng học.
+                </p> -->
+            </a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-            <img class="img-thumbnail animated" alt="logo_content" src="images/topic4.png" style="animation-delay:0.6s" />
-            <div class="content-course-title"><h4>Thi thử IELTS</h4></div>
-            <!-- <p>
-                Mỗi tháng Ehouse sẽ tổ chức chương trình thi thử IELTS dành cho các bạn chưa và sắp thi IELTS kiểm tra trình độ IELTS của
-                mình. Thi thử IELTS với 4 kĩ năng cùng với format thi sát với thực tế giúp bạn đánh giá được trình độ IELTS
-                hiện tại và lập kế hoạch để chinh phục IELTS với điểm số mong muốn.
-            </p> -->
+            <a href="#">
+                <img class="img-thumbnail animated" alt="logo_content" src="images/topic4.png" style="animation-delay:0.6s" />
+                <div class="content-course-title"><div><h4>Thi thử IELTS</h4></div></div>
+                <!-- <p>
+                    Mỗi tháng Ehouse sẽ tổ chức chương trình thi thử IELTS dành cho các bạn chưa và sắp thi IELTS kiểm tra trình độ IELTS của
+                    mình. Thi thử IELTS với 4 kĩ năng cùng với format thi sát với thực tế giúp bạn đánh giá được trình độ IELTS
+                    hiện tại và lập kế hoạch để chinh phục IELTS với điểm số mong muốn.
+                </p> -->
+            </a>
         </div>
     </div>
     <!-- End cac khoa hoc -->

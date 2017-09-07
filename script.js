@@ -81,12 +81,20 @@ $(document).ready(function () {
 });
 // Script for top Navigation Menu
 jQuery(window).bind('scroll', function () {
-    if (jQuery(window).scrollTop() > 10) {
-        jQuery('#header-2').addClass('navbar-fixed-top').removeClass('topnavbar');
-        jQuery('body').addClass('bodytopmargin').removeClass('bodynomargin');
-    } else {
-        jQuery('#header-2').removeClass('navbar-fixed-top').addClass('topnavbar');
-        jQuery('body').removeClass('bodytopmargin').addClass('bodynomargin');
+    if (window.innerWidth > 768) {
+        if (jQuery(window).scrollTop() > 50) {
+            jQuery('#header-2').removeClass('hidden');
+            jQuery('#header-2 li').removeClass('open');
+            jQuery('#header-1').addClass('hidden');
+            jQuery('#header-2').addClass('navbar-fixed-top').removeClass('topnavbar');
+            jQuery('body').addClass('bodytopmargin').removeClass('bodynomargin');
+        } else {
+            jQuery('#header-1').removeClass('hidden');
+            jQuery('#header-1 li').removeClass('open')
+            jQuery('#header-2').addClass('hidden');
+            jQuery('#header-2').removeClass('navbar-fixed-top').addClass('topnavbar');
+            jQuery('body').removeClass('bodytopmargin').addClass('bodynomargin');
+        }
     }
     if (jQuery(window).scrollTop() > 150 && jQuery(window).scrollTop() < 300) {
         jQuery('.content-course img').animateCss('bounce');
@@ -98,7 +106,7 @@ jQuery(window).bind('scroll', function () {
 $.fn.extend({
     animateCss: function (animationName) {
         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        this.addClass('animated ' + animationName).one(animationEnd, function() {
+        this.addClass('animated ' + animationName).one(animationEnd, function () {
             $(this).removeClass('animated ' + animationName);
         });
         return this;

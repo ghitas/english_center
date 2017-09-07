@@ -163,29 +163,12 @@
   .navbar .navbar-toggle .icon-bar {
     background: #CCCCCC; 
   }
-  .navbar .navbar-nav > li:hover > a{
+  #header-2 .navbar-nav > li:hover > a{
     box-shadow: 0 4px 0 #7765a3;
     color:#7765a3; 
   }
   .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
     border-color: #FFFFFF;
-  }
-  .navbar .navbar-nav > li > a:hover,
-  .navbar .navbar-nav > li > a:focus,
-  .navbar .navbar-nav > li > a:active,
-  .navbar .navbar-nav > li:hover,
-  .navbar .navbar-nav > li:focus,
-  .navbar .navbar-nav > li:active,
-  .navbar .navbar-nav > li.active,
-  .navbar .navbar-nav .open > a,
-  .navbar .navbar-nav .open > a:focus
-  .open > a:active {
-    background: #FFFFFF !important;
-  }
-  @media only screen and (min-width: 768px) {
-  }
-  
-  @media only screen and (min-width: 1200px) {
   }
   /* Slider */
   .slider .owl-nav {
@@ -492,7 +475,7 @@
    /* Large Devices, Wide Screens */
    /* Medium Devices, Desktops */
    /* Small Devices, Tablets */
-   @media screen and (max-width: 991px){
+   /* @media screen and (max-width: 991px){
 
     .form-newsletter label {
       display: block;
@@ -515,20 +498,20 @@
     } 
   }
   /* Extra Small Devices, Phones */
-  @media only screen and (max-width: 480px) {
+  /* @media only screen and (max-width: 480px) {
     .tintuc li {
       width: 100%;
       margin: 0; 
     }
 
-  }
+  } */
   /* Custom, iPhone Retina */
-  @media only screen and (max-width: 320px) {
+  /* @media only screen and (max-width: 320px) {
     .tintuc li {
       width: 100%;
       margin: 0; 
     } 
-  }
+  } */
 /*******************************************************************************************
 **    content course 28/8/2017
 **
@@ -544,27 +527,32 @@
   transition-timing-function: cubic-bezier(.29,1.19,.63,1.23);
 }
 .content-course .content-course-title{
+  position: relative;
+  width: 100%;
+}
+.content-course-title > div{
   position: absolute;
   width: 100%;
   height: 100px;
-  top: 160px;
-  padding-right: 30px;
+  bottom: 100%;
+  left: 0;
+  padding: 5px;
   background-color: rgba(255,255,255,0.7);
 }
 .content-course p{
   font-size: 14px;
   text-align: justify;
 }
-.content-course div:nth-child(1){
+.content-course div:nth-child(1) a > div{
   color: rgba(60,15,15,.8);
 }
-.content-course div:nth-child(2){
+.content-course div:nth-child(2) a > div{
   color: rgba(15,60,15,.8);
 }
-.content-course div:nth-child(3){
+.content-course div:nth-child(3) a > div{
   color: rgba(60,60,15,.8);
 }
-.content-course div:nth-child(4){
+.content-course div:nth-child(4) a > div{
   color: rgba(15,15,60,.8);
 }
 .classroom{
@@ -635,6 +623,12 @@
   } 
 }
 @media only screen and (min-width: 0px) {
+  #header-1{
+    background: transparent;
+  }
+  #header-1 .navbar-nav > li:hover > a{
+    color:purple; 
+  }
   .register span{
     font-size: 20px;
   }
@@ -643,37 +637,59 @@
   }
 }
 @media only screen and (min-width: 768px) {
+  #header-1{
+    z-index: 2;
+    margin-bottom: -110px;
+    background: transparent;
+  }
+  #header-1 .navbar-nav > li >a{
+    color: #cecece ;
+  }
+  #header-1 .navbar-nav > li:hover > a{
+    color:white; 
+  }
+  #header-1 .navbar-nav > li.open > a{
+    background:transparent;
+  }
     .navbar-nav{
       margin: 0 auto;
       display: table;
       table-layout: fixed;
       float: none;
     }
-    
     .navbar-nav ul li:hover > a{ 
       padding-top: 15px; 
       padding-bottom: 15px; 
       color: rebeccapurple;
       background-color: rgba(150,100,200,0.2)
     }
-    
-    a.navbar-brand{ display:none;}
-  .mid-footer {
-    text-align: left;
-  }
-  .mid-footer .row > div{
-    min-height: 220px;
-  }
-  .presentation .media-body{
-    width: 75%;
-  }
-  .content-course-title{
-    top: 340px;
-  }
+    a.navbar-brand{ 
+      display:none;
+    }
+    .mid-footer {
+      text-align: left;
+    }
+    .mid-footer .row > div{
+      min-height: 220px;
+    }
+    .presentation .media-body{
+      width: 75%;
+    }
 }
 @media only screen and (min-width: 1200px) {
   .register span{
     font-size: 25px;
+  }
+  #header-1{
+    z-index: 2;
+    margin-bottom: -53px;
+    background: transparent;
+  }
+  #header-1 .navbar-nav > li >a{
+    color: #cecece ;
+  }
+  #header-1 .navbar-nav > li:hover > a{
+    color:white; 
   }
     .navbar-nav{
       margin: 0 auto;
@@ -729,4 +745,18 @@
   color: #755da0;
   background-color: #dbccea;
   box-shadow: none;
+}
+#myCarousel img{
+  width: 100%;
+  height: 450px;
+}
+#myCarousel .blend > div{ /* this div make img darker */
+  position: absolute;
+  width:100%;
+  height: 450px;
+  z-index: 2;
+  background: rgba(0,0,0,0.7);
+}
+#myCarousel .carousel-caption{
+  bottom: 40% !important;
 }
