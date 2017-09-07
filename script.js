@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    $(window).resize(function(){
+        if(window.innerWidth <= 768){
+            jQuery('#header-1').removeClass('hidden');
+            jQuery('#header-1 li').removeClass('open')
+            jQuery('#header-2').addClass('hidden');
+            jQuery('#header-2').removeClass('navbar-fixed-top').addClass('topnavbar');
+            jQuery('body').removeClass('bodytopmargin').addClass('bodynomargin');
+        }
+    });
     $slider = $('#slider');
     $slider.addClass('owl-carousel owl-theme');
     $slider.owlCarousel({
